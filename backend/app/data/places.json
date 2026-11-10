@@ -1,0 +1,5864 @@
+[
+  {
+    "name": "Адыгейск",
+    "region": "RU-ADYGEA",
+    "lat": 44.88452,
+    "lon": 39.19202,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Майкоп",
+    "region": "RU-ADYGEA",
+    "lat": 44.611,
+    "lon": 40.111,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Астрахань",
+    "region": "RU-ASTRAKHAN",
+    "lat": 46.33333,
+    "lon": 48.03333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Ахтубинск",
+    "region": "RU-ASTRAKHAN",
+    "lat": 48.28333,
+    "lon": 46.16667,
+    "kind": "city",
+    "aliases": [
+      "ахтубинский"
+    ]
+  },
+  {
+    "name": "Знаменск",
+    "region": "RU-ASTRAKHAN",
+    "lat": 48.58333,
+    "lon": 45.75,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Камызяк",
+    "region": "RU-ASTRAKHAN",
+    "lat": 46.11556,
+    "lon": 48.07694,
+    "kind": "settlement",
+    "aliases": [
+      "камызякский"
+    ]
+  },
+  {
+    "name": "Нариманов",
+    "region": "RU-ASTRAKHAN",
+    "lat": 46.68333,
+    "lon": 47.85,
+    "kind": "settlement",
+    "aliases": [
+      "наримановский"
+    ]
+  },
+  {
+    "name": "Харабали",
+    "region": "RU-ASTRAKHAN",
+    "lat": 47.4,
+    "lon": 47.25,
+    "kind": "settlement",
+    "aliases": [
+      "харабалинский"
+    ]
+  },
+  {
+    "name": "Алексеевка",
+    "region": "RU-BELGOROD",
+    "lat": 50.63,
+    "lon": 38.68639,
+    "kind": "city",
+    "aliases": [
+      "алексеевский"
+    ]
+  },
+  {
+    "name": "Белгород",
+    "region": "RU-BELGOROD",
+    "lat": 50.6,
+    "lon": 36.6,
+    "kind": "city",
+    "aliases": [
+      "белгородский"
+    ]
+  },
+  {
+    "name": "Бирюч",
+    "region": "RU-BELGOROD",
+    "lat": 50.65,
+    "lon": 38.4,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Борисовка",
+    "region": "RU-BELGOROD",
+    "lat": 50.6,
+    "lon": 36.0167,
+    "kind": "settlement",
+    "aliases": [
+      "борисовский"
+    ]
+  },
+  {
+    "name": "Валуйки",
+    "region": "RU-BELGOROD",
+    "lat": 50.18333,
+    "lon": 38.11667,
+    "kind": "city",
+    "aliases": [
+      "валуйский"
+    ]
+  },
+  {
+    "name": "Грайворон",
+    "region": "RU-BELGOROD",
+    "lat": 50.48333,
+    "lon": 35.66667,
+    "kind": "settlement",
+    "aliases": [
+      "грайворонский"
+    ]
+  },
+  {
+    "name": "Губкин",
+    "region": "RU-BELGOROD",
+    "lat": 51.28333,
+    "lon": 37.55,
+    "kind": "city",
+    "aliases": [
+      "губкинский"
+    ]
+  },
+  {
+    "name": "Ивня",
+    "region": "RU-BELGOROD",
+    "lat": 51.0667,
+    "lon": 36.1333,
+    "kind": "settlement",
+    "aliases": [
+      "ивнянский"
+    ]
+  },
+  {
+    "name": "Короча",
+    "region": "RU-BELGOROD",
+    "lat": 50.81361,
+    "lon": 37.18139,
+    "kind": "settlement",
+    "aliases": [
+      "корочанский"
+    ]
+  },
+  {
+    "name": "Красная Яруга",
+    "region": "RU-BELGOROD",
+    "lat": 50.8,
+    "lon": 35.6667,
+    "kind": "settlement",
+    "aliases": [
+      "краснояружский"
+    ]
+  },
+  {
+    "name": "Красное",
+    "region": "RU-BELGOROD",
+    "lat": 50.9333,
+    "lon": 38.6833,
+    "kind": "settlement",
+    "aliases": [
+      "краснинский",
+      "красное белгородская"
+    ]
+  },
+  {
+    "name": "Новая Таволжанка",
+    "region": "RU-BELGOROD",
+    "lat": 50.3833,
+    "lon": 36.9167,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Новый Оскол",
+    "region": "RU-BELGOROD",
+    "lat": 50.76667,
+    "lon": 37.86667,
+    "kind": "settlement",
+    "aliases": [
+      "новооскольский"
+    ]
+  },
+  {
+    "name": "Ракитное",
+    "region": "RU-BELGOROD",
+    "lat": 50.8333,
+    "lon": 35.8333,
+    "kind": "settlement",
+    "aliases": [
+      "ракитянский"
+    ]
+  },
+  {
+    "name": "Старый Оскол",
+    "region": "RU-BELGOROD",
+    "lat": 51.29806,
+    "lon": 37.835,
+    "kind": "city",
+    "aliases": [
+      "старооскольский"
+    ]
+  },
+  {
+    "name": "Строитель",
+    "region": "RU-BELGOROD",
+    "lat": 50.78333,
+    "lon": 36.48333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Шебекино",
+    "region": "RU-BELGOROD",
+    "lat": 50.40778,
+    "lon": 36.89694,
+    "kind": "city",
+    "aliases": [
+      "шебекинский"
+    ]
+  },
+  {
+    "name": "Белая Берёзка",
+    "region": "RU-BRYANSK",
+    "lat": 52.1333,
+    "lon": 32.1167,
+    "kind": "settlement",
+    "aliases": [
+      "белоберезковский"
+    ]
+  },
+  {
+    "name": "Брянск",
+    "region": "RU-BRYANSK",
+    "lat": 53.25,
+    "lon": 34.36667,
+    "kind": "city",
+    "aliases": [
+      "брянский"
+    ]
+  },
+  {
+    "name": "Выгоничи",
+    "region": "RU-BRYANSK",
+    "lat": 53.1,
+    "lon": 34.0667,
+    "kind": "settlement",
+    "aliases": [
+      "выгоничский"
+    ]
+  },
+  {
+    "name": "Гордеевка",
+    "region": "RU-BRYANSK",
+    "lat": 52.9667,
+    "lon": 31.95,
+    "kind": "settlement",
+    "aliases": [
+      "гордеевский"
+    ]
+  },
+  {
+    "name": "Дятьково",
+    "region": "RU-BRYANSK",
+    "lat": 53.6,
+    "lon": 34.33333,
+    "kind": "city",
+    "aliases": [
+      "дятьковский"
+    ]
+  },
+  {
+    "name": "Жуковка",
+    "region": "RU-BRYANSK",
+    "lat": 53.53333,
+    "lon": 33.73333,
+    "kind": "settlement",
+    "aliases": [
+      "жуковский"
+    ]
+  },
+  {
+    "name": "Злынка",
+    "region": "RU-BRYANSK",
+    "lat": 52.43333,
+    "lon": 31.73333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Карачев",
+    "region": "RU-BRYANSK",
+    "lat": 53.11667,
+    "lon": 34.98333,
+    "kind": "settlement",
+    "aliases": [
+      "карачевский"
+    ]
+  },
+  {
+    "name": "Климово",
+    "region": "RU-BRYANSK",
+    "lat": 52.3833,
+    "lon": 32.1833,
+    "kind": "settlement",
+    "aliases": [
+      "климовский"
+    ]
+  },
+  {
+    "name": "Клинцы",
+    "region": "RU-BRYANSK",
+    "lat": 52.75278,
+    "lon": 32.23611,
+    "kind": "city",
+    "aliases": [
+      "клинцовский"
+    ]
+  },
+  {
+    "name": "Комаричи",
+    "region": "RU-BRYANSK",
+    "lat": 52.4167,
+    "lon": 34.8,
+    "kind": "settlement",
+    "aliases": [
+      "комаричский"
+    ]
+  },
+  {
+    "name": "Мглин",
+    "region": "RU-BRYANSK",
+    "lat": 53.06111,
+    "lon": 32.84833,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Навля",
+    "region": "RU-BRYANSK",
+    "lat": 52.8333,
+    "lon": 34.4833,
+    "kind": "settlement",
+    "aliases": [
+      "навлинский"
+    ]
+  },
+  {
+    "name": "Новозыбков",
+    "region": "RU-BRYANSK",
+    "lat": 52.53333,
+    "lon": 31.93333,
+    "kind": "city",
+    "aliases": [
+      "новозыбковский"
+    ]
+  },
+  {
+    "name": "Погар",
+    "region": "RU-BRYANSK",
+    "lat": 52.55,
+    "lon": 33.25,
+    "kind": "settlement",
+    "aliases": [
+      "погарский"
+    ]
+  },
+  {
+    "name": "Почеп",
+    "region": "RU-BRYANSK",
+    "lat": 52.93333,
+    "lon": 33.45,
+    "kind": "settlement",
+    "aliases": [
+      "почепский"
+    ]
+  },
+  {
+    "name": "Рогнедино",
+    "region": "RU-BRYANSK",
+    "lat": 53.8,
+    "lon": 33.5667,
+    "kind": "settlement",
+    "aliases": [
+      "рогнединский"
+    ]
+  },
+  {
+    "name": "Севск",
+    "region": "RU-BRYANSK",
+    "lat": 52.15,
+    "lon": 34.49389,
+    "kind": "settlement",
+    "aliases": [
+      "севский"
+    ]
+  },
+  {
+    "name": "Сельцо",
+    "region": "RU-BRYANSK",
+    "lat": 53.36944,
+    "lon": 34.1,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Стародуб",
+    "region": "RU-BRYANSK",
+    "lat": 52.58333,
+    "lon": 32.76667,
+    "kind": "settlement",
+    "aliases": [
+      "стародубский"
+    ]
+  },
+  {
+    "name": "Сураж",
+    "region": "RU-BRYANSK",
+    "lat": 53.01667,
+    "lon": 32.4,
+    "kind": "settlement",
+    "aliases": [
+      "суражский"
+    ]
+  },
+  {
+    "name": "Трубчевск",
+    "region": "RU-BRYANSK",
+    "lat": 52.58333,
+    "lon": 33.76667,
+    "kind": "settlement",
+    "aliases": [
+      "трубчевский"
+    ]
+  },
+  {
+    "name": "Унеча",
+    "region": "RU-BRYANSK",
+    "lat": 52.85,
+    "lon": 32.68333,
+    "kind": "city",
+    "aliases": [
+      "унечский"
+    ]
+  },
+  {
+    "name": "Фокино",
+    "region": "RU-BRYANSK",
+    "lat": 53.45,
+    "lon": 34.41667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Алупка",
+    "region": "RU-CRIMEA",
+    "lat": 44.41972,
+    "lon": 34.04306,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Алушта",
+    "region": "RU-CRIMEA",
+    "lat": 44.66722,
+    "lon": 34.39778,
+    "kind": "city",
+    "aliases": [
+      "алуштинский"
+    ]
+  },
+  {
+    "name": "Армянск",
+    "region": "RU-CRIMEA",
+    "lat": 46.10694,
+    "lon": 33.69306,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Бахчисарай",
+    "region": "RU-CRIMEA",
+    "lat": 44.75278,
+    "lon": 33.86083,
+    "kind": "city",
+    "aliases": [
+      "бахчисарайский"
+    ]
+  },
+  {
+    "name": "Белогорск",
+    "region": "RU-CRIMEA",
+    "lat": 45.05444,
+    "lon": 34.60222,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Джанкой",
+    "region": "RU-CRIMEA",
+    "lat": 45.70861,
+    "lon": 34.39333,
+    "kind": "city",
+    "aliases": [
+      "джанкойский"
+    ]
+  },
+  {
+    "name": "Евпатория",
+    "region": "RU-CRIMEA",
+    "lat": 45.2,
+    "lon": 33.35833,
+    "kind": "city",
+    "aliases": [
+      "евпаторийский"
+    ]
+  },
+  {
+    "name": "Керчь",
+    "region": "RU-CRIMEA",
+    "lat": 45.33861,
+    "lon": 36.46806,
+    "kind": "city",
+    "aliases": [
+      "керченский"
+    ]
+  },
+  {
+    "name": "Красноперекопск",
+    "region": "RU-CRIMEA",
+    "lat": 45.95531,
+    "lon": 33.795,
+    "kind": "city",
+    "aliases": [
+      "красноперекопский"
+    ]
+  },
+  {
+    "name": "Саки",
+    "region": "RU-CRIMEA",
+    "lat": 45.13361,
+    "lon": 33.57722,
+    "kind": "city",
+    "aliases": [
+      "сакский"
+    ]
+  },
+  {
+    "name": "Симферополь",
+    "region": "RU-CRIMEA",
+    "lat": 44.94806,
+    "lon": 34.10417,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Старый Крым",
+    "region": "RU-CRIMEA",
+    "lat": 45.02917,
+    "lon": 35.08861,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Судак",
+    "region": "RU-CRIMEA",
+    "lat": 44.85139,
+    "lon": 34.9725,
+    "kind": "settlement",
+    "aliases": [
+      "судакский"
+    ]
+  },
+  {
+    "name": "Феодосия",
+    "region": "RU-CRIMEA",
+    "lat": 45.04889,
+    "lon": 35.37917,
+    "kind": "city",
+    "aliases": [
+      "феодосийский"
+    ]
+  },
+  {
+    "name": "Щёлкино",
+    "region": "RU-CRIMEA",
+    "lat": 45.42361,
+    "lon": 35.81861,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Ялта",
+    "region": "RU-CRIMEA",
+    "lat": 44.49944,
+    "lon": 34.15528,
+    "kind": "city",
+    "aliases": [
+      "ялтинский"
+    ]
+  },
+  {
+    "name": "Авдеевка",
+    "region": "RU-DNR",
+    "lat": 48.1333,
+    "lon": 37.75,
+    "kind": "city",
+    "aliases": [
+      "авдеевский"
+    ]
+  },
+  {
+    "name": "Амвросиевка",
+    "region": "RU-DNR",
+    "lat": 47.75,
+    "lon": 38.4833,
+    "kind": "city",
+    "aliases": [
+      "амвросиевский"
+    ]
+  },
+  {
+    "name": "Бахмут",
+    "region": "RU-DNR",
+    "lat": 48.5956,
+    "lon": 38.0008,
+    "kind": "city",
+    "aliases": [
+      "артемовский",
+      "бахмутский"
+    ]
+  },
+  {
+    "name": "Волноваха",
+    "region": "RU-DNR",
+    "lat": 47.6019,
+    "lon": 37.4936,
+    "kind": "city",
+    "aliases": [
+      "волновахский"
+    ]
+  },
+  {
+    "name": "Горловка",
+    "region": "RU-DNR",
+    "lat": 48.2917,
+    "lon": 38.0167,
+    "kind": "city",
+    "aliases": [
+      "горловский"
+    ]
+  },
+  {
+    "name": "Горняк",
+    "region": "RU-DNR",
+    "lat": 48.05,
+    "lon": 37.3667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Гродовка",
+    "region": "RU-DNR",
+    "lat": 48.2333,
+    "lon": 37.3833,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Дебальцево",
+    "region": "RU-DNR",
+    "lat": 48.3333,
+    "lon": 38.4,
+    "kind": "city",
+    "aliases": [
+      "дебальцевский"
+    ]
+  },
+  {
+    "name": "Донецк",
+    "region": "RU-DNR",
+    "lat": 48.0159,
+    "lon": 37.8028,
+    "kind": "city",
+    "aliases": [
+      "донецкий"
+    ]
+  },
+  {
+    "name": "Дружковка",
+    "region": "RU-DNR",
+    "lat": 48.6167,
+    "lon": 37.5333,
+    "kind": "city",
+    "aliases": [
+      "дружковский"
+    ]
+  },
+  {
+    "name": "Енакиево",
+    "region": "RU-DNR",
+    "lat": 48.2333,
+    "lon": 38.2,
+    "kind": "city",
+    "aliases": [
+      "енакиевский",
+      "еникиевский"
+    ]
+  },
+  {
+    "name": "Кировское",
+    "region": "RU-DNR",
+    "lat": 48.15,
+    "lon": 38.3667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Константиновка",
+    "region": "RU-DNR",
+    "lat": 48.5333,
+    "lon": 37.7167,
+    "kind": "city",
+    "aliases": [
+      "константиновский"
+    ]
+  },
+  {
+    "name": "Краматорск",
+    "region": "RU-DNR",
+    "lat": 48.7389,
+    "lon": 37.5847,
+    "kind": "city",
+    "aliases": [
+      "краматорский"
+    ]
+  },
+  {
+    "name": "Красногоровка",
+    "region": "RU-DNR",
+    "lat": 48.0,
+    "lon": 37.5,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Кураховка",
+    "region": "RU-DNR",
+    "lat": 48.0333,
+    "lon": 37.3667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Курахово",
+    "region": "RU-DNR",
+    "lat": 47.9833,
+    "lon": 37.2833,
+    "kind": "city",
+    "aliases": [
+      "кураховский"
+    ]
+  },
+  {
+    "name": "Макеевка",
+    "region": "RU-DNR",
+    "lat": 48.0478,
+    "lon": 37.9628,
+    "kind": "city",
+    "aliases": [
+      "макеевский"
+    ]
+  },
+  {
+    "name": "Мариуполь",
+    "region": "RU-DNR",
+    "lat": 47.0951,
+    "lon": 37.5413,
+    "kind": "city",
+    "aliases": [
+      "мариупольский"
+    ]
+  },
+  {
+    "name": "Марьинка",
+    "region": "RU-DNR",
+    "lat": 47.95,
+    "lon": 37.5,
+    "kind": "city",
+    "aliases": [
+      "марьинский"
+    ]
+  },
+  {
+    "name": "Мирноград",
+    "region": "RU-DNR",
+    "lat": 48.3,
+    "lon": 37.2667,
+    "kind": "city",
+    "aliases": [
+      "димитров",
+      "мирноградский"
+    ]
+  },
+  {
+    "name": "Новоазовск",
+    "region": "RU-DNR",
+    "lat": 47.1167,
+    "lon": 38.0833,
+    "kind": "city",
+    "aliases": [
+      "новоазовский"
+    ]
+  },
+  {
+    "name": "Новогродовка",
+    "region": "RU-DNR",
+    "lat": 48.1833,
+    "lon": 37.3333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Очеретино",
+    "region": "RU-DNR",
+    "lat": 48.2333,
+    "lon": 37.5667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Покровск",
+    "region": "RU-DNR",
+    "lat": 48.2833,
+    "lon": 37.1833,
+    "kind": "city",
+    "aliases": [
+      "покровский донецкий"
+    ]
+  },
+  {
+    "name": "Родинское",
+    "region": "RU-DNR",
+    "lat": 48.35,
+    "lon": 37.2,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Селидово",
+    "region": "RU-DNR",
+    "lat": 48.15,
+    "lon": 37.3,
+    "kind": "city",
+    "aliases": [
+      "селидовский"
+    ]
+  },
+  {
+    "name": "Славянск",
+    "region": "RU-DNR",
+    "lat": 48.8531,
+    "lon": 37.6053,
+    "kind": "city",
+    "aliases": [
+      "славянский"
+    ]
+  },
+  {
+    "name": "Снежное",
+    "region": "RU-DNR",
+    "lat": 48.0333,
+    "lon": 38.7667,
+    "kind": "city",
+    "aliases": [
+      "снежнянский"
+    ]
+  },
+  {
+    "name": "Торез",
+    "region": "RU-DNR",
+    "lat": 48.0333,
+    "lon": 38.6333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Угледар",
+    "region": "RU-DNR",
+    "lat": 47.7833,
+    "lon": 37.25,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Украинск",
+    "region": "RU-DNR",
+    "lat": 48.1,
+    "lon": 37.3667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Харцызск",
+    "region": "RU-DNR",
+    "lat": 48.0333,
+    "lon": 38.15,
+    "kind": "city",
+    "aliases": [
+      "харцызский"
+    ]
+  },
+  {
+    "name": "Цукурино",
+    "region": "RU-DNR",
+    "lat": 48.1,
+    "lon": 37.3167,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Часов Яр",
+    "region": "RU-DNR",
+    "lat": 48.5833,
+    "lon": 37.8333,
+    "kind": "city",
+    "aliases": [
+      "часовоярский"
+    ]
+  },
+  {
+    "name": "Шахтёрск",
+    "region": "RU-DNR",
+    "lat": 48.05,
+    "lon": 38.45,
+    "kind": "city",
+    "aliases": [
+      "шахтерский",
+      "шахтёрский"
+    ]
+  },
+  {
+    "name": "Ясиноватая",
+    "region": "RU-DNR",
+    "lat": 48.1167,
+    "lon": 37.85,
+    "kind": "city",
+    "aliases": [
+      "ясиноватский"
+    ]
+  },
+  {
+    "name": "Городовиковск",
+    "region": "RU-KALMYKIA",
+    "lat": 46.08333,
+    "lon": 41.93333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Лагань",
+    "region": "RU-KALMYKIA",
+    "lat": 45.3925,
+    "lon": 47.355,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Элиста",
+    "region": "RU-KALMYKIA",
+    "lat": 46.31667,
+    "lon": 44.26667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Балабаново",
+    "region": "RU-KALUGA",
+    "lat": 55.18333,
+    "lon": 36.65,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Белоусово",
+    "region": "RU-KALUGA",
+    "lat": 55.09167,
+    "lon": 36.66667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Боровск",
+    "region": "RU-KALUGA",
+    "lat": 55.2,
+    "lon": 36.48333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Ермолино",
+    "region": "RU-KALUGA",
+    "lat": 55.20556,
+    "lon": 36.57,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Жиздра",
+    "region": "RU-KALUGA",
+    "lat": 53.75028,
+    "lon": 34.73611,
+    "kind": "settlement",
+    "aliases": [
+      "жиздринский"
+    ]
+  },
+  {
+    "name": "Жуков",
+    "region": "RU-KALUGA",
+    "lat": 55.03333,
+    "lon": 36.75,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Калуга",
+    "region": "RU-KALUGA",
+    "lat": 54.53333,
+    "lon": 36.26667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Киров",
+    "region": "RU-KALUGA",
+    "lat": 54.08333,
+    "lon": 34.3,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Козельск",
+    "region": "RU-KALUGA",
+    "lat": 54.03333,
+    "lon": 35.78333,
+    "kind": "settlement",
+    "aliases": [
+      "козельский"
+    ]
+  },
+  {
+    "name": "Кондрово",
+    "region": "RU-KALUGA",
+    "lat": 54.8,
+    "lon": 35.93333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Кремёнки",
+    "region": "RU-KALUGA",
+    "lat": 54.88917,
+    "lon": 37.12333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Людиново",
+    "region": "RU-KALUGA",
+    "lat": 53.86667,
+    "lon": 34.46667,
+    "kind": "city",
+    "aliases": [
+      "людиновский"
+    ]
+  },
+  {
+    "name": "Малоярославец",
+    "region": "RU-KALUGA",
+    "lat": 55.0,
+    "lon": 36.46667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Медынь",
+    "region": "RU-KALUGA",
+    "lat": 54.96667,
+    "lon": 35.86667,
+    "kind": "settlement",
+    "aliases": [
+      "медынский"
+    ]
+  },
+  {
+    "name": "Мещовск",
+    "region": "RU-KALUGA",
+    "lat": 54.31667,
+    "lon": 35.28333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Мосальск",
+    "region": "RU-KALUGA",
+    "lat": 54.48333,
+    "lon": 34.98333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Обнинск",
+    "region": "RU-KALUGA",
+    "lat": 55.1,
+    "lon": 36.61667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Сосенский",
+    "region": "RU-KALUGA",
+    "lat": 54.05,
+    "lon": 35.96667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Спас-Деменск",
+    "region": "RU-KALUGA",
+    "lat": 54.40981,
+    "lon": 34.01899,
+    "kind": "settlement",
+    "aliases": [
+      "спас-деменский"
+    ]
+  },
+  {
+    "name": "Сухиничи",
+    "region": "RU-KALUGA",
+    "lat": 54.1,
+    "lon": 35.35,
+    "kind": "settlement",
+    "aliases": [
+      "сухиничский"
+    ]
+  },
+  {
+    "name": "Таруса",
+    "region": "RU-KALUGA",
+    "lat": 54.71667,
+    "lon": 37.18333,
+    "kind": "settlement",
+    "aliases": [
+      "тарусский"
+    ]
+  },
+  {
+    "name": "Юхнов",
+    "region": "RU-KALUGA",
+    "lat": 54.75,
+    "lon": 35.23333,
+    "kind": "settlement",
+    "aliases": [
+      "юхновский"
+    ]
+  },
+  {
+    "name": "Алёшки",
+    "region": "RU-KHERSON",
+    "lat": 46.6254,
+    "lon": 32.7219,
+    "kind": "city",
+    "aliases": [
+      "алешковский",
+      "алёшковский"
+    ]
+  },
+  {
+    "name": "Берислав",
+    "region": "RU-KHERSON",
+    "lat": 46.8333,
+    "lon": 33.4167,
+    "kind": "city",
+    "aliases": [
+      "бериславский"
+    ]
+  },
+  {
+    "name": "Великая Лепетиха",
+    "region": "RU-KHERSON",
+    "lat": 47.1833,
+    "lon": 33.9333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Верхний Рогачик",
+    "region": "RU-KHERSON",
+    "lat": 47.2667,
+    "lon": 34.0333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Высокополье",
+    "region": "RU-KHERSON",
+    "lat": 47.4667,
+    "lon": 33.5333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Геническ",
+    "region": "RU-KHERSON",
+    "lat": 46.1758,
+    "lon": 33.2583,
+    "kind": "city",
+    "aliases": [
+      "генический"
+    ]
+  },
+  {
+    "name": "Голая Пристань",
+    "region": "RU-KHERSON",
+    "lat": 46.5167,
+    "lon": 32.5333,
+    "kind": "city",
+    "aliases": [
+      "голопристанский"
+    ]
+  },
+  {
+    "name": "Горностаевка",
+    "region": "RU-KHERSON",
+    "lat": 46.8667,
+    "lon": 33.7667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Ивановка",
+    "region": "RU-KHERSON",
+    "lat": 46.7167,
+    "lon": 34.55,
+    "kind": "settlement",
+    "aliases": [
+      "ивановский херсонский"
+    ]
+  },
+  {
+    "name": "Каланчак",
+    "region": "RU-KHERSON",
+    "lat": 46.25,
+    "lon": 33.2833,
+    "kind": "settlement",
+    "aliases": [
+      "каланчакский"
+    ]
+  },
+  {
+    "name": "Каховка",
+    "region": "RU-KHERSON",
+    "lat": 46.8137,
+    "lon": 33.4869,
+    "kind": "city",
+    "aliases": [
+      "каховский"
+    ]
+  },
+  {
+    "name": "Нижние Серогозы",
+    "region": "RU-KHERSON",
+    "lat": 47.0167,
+    "lon": 34.3167,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Новая Каховка",
+    "region": "RU-KHERSON",
+    "lat": 46.7545,
+    "lon": 33.3486,
+    "kind": "city",
+    "aliases": [
+      "новокаховский"
+    ]
+  },
+  {
+    "name": "Нововоронцовка",
+    "region": "RU-KHERSON",
+    "lat": 47.5,
+    "lon": 33.9167,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Новотроицкое",
+    "region": "RU-KHERSON",
+    "lat": 46.3833,
+    "lon": 34.3333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Скадовск",
+    "region": "RU-KHERSON",
+    "lat": 46.1167,
+    "lon": 32.9167,
+    "kind": "city",
+    "aliases": [
+      "скадовский"
+    ]
+  },
+  {
+    "name": "Херсон",
+    "region": "RU-KHERSON",
+    "lat": 46.6354,
+    "lon": 32.6169,
+    "kind": "city",
+    "aliases": [
+      "херсонский"
+    ]
+  },
+  {
+    "name": "Чаплинка",
+    "region": "RU-KHERSON",
+    "lat": 46.3667,
+    "lon": 33.5333,
+    "kind": "settlement",
+    "aliases": [
+      "чаплинский"
+    ]
+  },
+  {
+    "name": "Абинск",
+    "region": "RU-KRASNODAR",
+    "lat": 44.86667,
+    "lon": 38.16667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Анапа",
+    "region": "RU-KRASNODAR",
+    "lat": 44.89386,
+    "lon": 37.31748,
+    "kind": "city",
+    "aliases": [
+      "анапский"
+    ]
+  },
+  {
+    "name": "Апшеронск",
+    "region": "RU-KRASNODAR",
+    "lat": 44.46083,
+    "lon": 39.74056,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Армавир",
+    "region": "RU-KRASNODAR",
+    "lat": 44.99464,
+    "lon": 41.12946,
+    "kind": "city",
+    "aliases": [
+      "армавирский"
+    ]
+  },
+  {
+    "name": "Белореченск",
+    "region": "RU-KRASNODAR",
+    "lat": 44.76667,
+    "lon": 39.86667,
+    "kind": "city",
+    "aliases": [
+      "белореченский"
+    ]
+  },
+  {
+    "name": "Брюховецкая",
+    "region": "RU-KRASNODAR",
+    "lat": 45.8,
+    "lon": 38.9833,
+    "kind": "settlement",
+    "aliases": [
+      "брюховецкий"
+    ]
+  },
+  {
+    "name": "Выселки",
+    "region": "RU-KRASNODAR",
+    "lat": 45.5833,
+    "lon": 39.7667,
+    "kind": "settlement",
+    "aliases": [
+      "выселковский"
+    ]
+  },
+  {
+    "name": "Геленджик",
+    "region": "RU-KRASNODAR",
+    "lat": 44.561,
+    "lon": 38.07695,
+    "kind": "city",
+    "aliases": [
+      "геленджикский"
+    ]
+  },
+  {
+    "name": "Горячий Ключ",
+    "region": "RU-KRASNODAR",
+    "lat": 44.63328,
+    "lon": 39.13329,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Гулькевичи",
+    "region": "RU-KRASNODAR",
+    "lat": 45.36028,
+    "lon": 40.69444,
+    "kind": "city",
+    "aliases": [
+      "гулькевичский"
+    ]
+  },
+  {
+    "name": "Динская",
+    "region": "RU-KRASNODAR",
+    "lat": 45.2167,
+    "lon": 39.2333,
+    "kind": "settlement",
+    "aliases": [
+      "динской"
+    ]
+  },
+  {
+    "name": "Ейск",
+    "region": "RU-KRASNODAR",
+    "lat": 46.71056,
+    "lon": 38.27778,
+    "kind": "city",
+    "aliases": [
+      "ейский"
+    ]
+  },
+  {
+    "name": "Кавказская",
+    "region": "RU-KRASNODAR",
+    "lat": 45.4333,
+    "lon": 40.6667,
+    "kind": "settlement",
+    "aliases": [
+      "кавказский кубанский"
+    ]
+  },
+  {
+    "name": "Калининская",
+    "region": "RU-KRASNODAR",
+    "lat": 45.4833,
+    "lon": 38.6667,
+    "kind": "settlement",
+    "aliases": [
+      "калининский"
+    ]
+  },
+  {
+    "name": "Каневская",
+    "region": "RU-KRASNODAR",
+    "lat": 46.1,
+    "lon": 38.95,
+    "kind": "settlement",
+    "aliases": [
+      "каневской"
+    ]
+  },
+  {
+    "name": "Кореновск",
+    "region": "RU-KRASNODAR",
+    "lat": 45.46667,
+    "lon": 39.45,
+    "kind": "city",
+    "aliases": [
+      "кореновский"
+    ]
+  },
+  {
+    "name": "Краснодар",
+    "region": "RU-KRASNODAR",
+    "lat": 45.03333,
+    "lon": 38.98333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Кропоткин",
+    "region": "RU-KRASNODAR",
+    "lat": 45.43333,
+    "lon": 40.56667,
+    "kind": "city",
+    "aliases": [
+      "кропоткинский"
+    ]
+  },
+  {
+    "name": "Крыловская",
+    "region": "RU-KRASNODAR",
+    "lat": 46.3167,
+    "lon": 39.9667,
+    "kind": "settlement",
+    "aliases": [
+      "крыловский"
+    ]
+  },
+  {
+    "name": "Крымск",
+    "region": "RU-KRASNODAR",
+    "lat": 44.93333,
+    "lon": 38.0,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Курганинск",
+    "region": "RU-KRASNODAR",
+    "lat": 44.88333,
+    "lon": 40.6,
+    "kind": "city",
+    "aliases": [
+      "курганинский"
+    ]
+  },
+  {
+    "name": "Кущевская",
+    "region": "RU-KRASNODAR",
+    "lat": 46.5667,
+    "lon": 39.6333,
+    "kind": "settlement",
+    "aliases": [
+      "кущевский"
+    ]
+  },
+  {
+    "name": "Лабинск",
+    "region": "RU-KRASNODAR",
+    "lat": 44.63334,
+    "lon": 40.73331,
+    "kind": "city",
+    "aliases": [
+      "лабинский"
+    ]
+  },
+  {
+    "name": "Ленинградская",
+    "region": "RU-KRASNODAR",
+    "lat": 46.3167,
+    "lon": 39.3833,
+    "kind": "settlement",
+    "aliases": [
+      "ленинградский кубанский"
+    ]
+  },
+  {
+    "name": "Мостовской",
+    "region": "RU-KRASNODAR",
+    "lat": 44.4,
+    "lon": 40.7833,
+    "kind": "settlement",
+    "aliases": [
+      "мостовский"
+    ]
+  },
+  {
+    "name": "Новокубанск",
+    "region": "RU-KRASNODAR",
+    "lat": 45.1,
+    "lon": 41.05,
+    "kind": "city",
+    "aliases": [
+      "новокубанский"
+    ]
+  },
+  {
+    "name": "Новоминская",
+    "region": "RU-KRASNODAR",
+    "lat": 46.3167,
+    "lon": 38.75,
+    "kind": "settlement",
+    "aliases": [
+      "новоминской"
+    ]
+  },
+  {
+    "name": "Новопокровская",
+    "region": "RU-KRASNODAR",
+    "lat": 46.0,
+    "lon": 40.7,
+    "kind": "settlement",
+    "aliases": [
+      "новопокровский"
+    ]
+  },
+  {
+    "name": "Новороссийск",
+    "region": "RU-KRASNODAR",
+    "lat": 44.71667,
+    "lon": 37.76667,
+    "kind": "city",
+    "aliases": [
+      "новороссийский"
+    ]
+  },
+  {
+    "name": "Отрадная",
+    "region": "RU-KRASNODAR",
+    "lat": 44.3833,
+    "lon": 41.5333,
+    "kind": "settlement",
+    "aliases": [
+      "отрадненский"
+    ]
+  },
+  {
+    "name": "Павловская",
+    "region": "RU-KRASNODAR",
+    "lat": 46.1333,
+    "lon": 39.7833,
+    "kind": "settlement",
+    "aliases": [
+      "павловский"
+    ]
+  },
+  {
+    "name": "Приморско-Ахтарск",
+    "region": "RU-KRASNODAR",
+    "lat": 46.05,
+    "lon": 38.18333,
+    "kind": "city",
+    "aliases": [
+      "приморско-ахтарский"
+    ]
+  },
+  {
+    "name": "Северская",
+    "region": "RU-KRASNODAR",
+    "lat": 44.85,
+    "lon": 38.6833,
+    "kind": "settlement",
+    "aliases": [
+      "северский"
+    ]
+  },
+  {
+    "name": "Славянск-на-Кубани",
+    "region": "RU-KRASNODAR",
+    "lat": 45.25861,
+    "lon": 38.12472,
+    "kind": "city",
+    "aliases": [
+      "славянский кубанский"
+    ]
+  },
+  {
+    "name": "Сочи",
+    "region": "RU-KRASNODAR",
+    "lat": 43.58528,
+    "lon": 39.72028,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Староминская",
+    "region": "RU-KRASNODAR",
+    "lat": 46.5333,
+    "lon": 39.05,
+    "kind": "settlement",
+    "aliases": [
+      "староминский"
+    ]
+  },
+  {
+    "name": "Старощербиновская",
+    "region": "RU-KRASNODAR",
+    "lat": 46.3833,
+    "lon": 38.7333,
+    "kind": "settlement",
+    "aliases": [
+      "старощербиновский"
+    ]
+  },
+  {
+    "name": "Тамань",
+    "region": "RU-KRASNODAR",
+    "lat": 45.2167,
+    "lon": 36.7167,
+    "kind": "settlement",
+    "aliases": [
+      "таманский"
+    ]
+  },
+  {
+    "name": "Тбилисская",
+    "region": "RU-KRASNODAR",
+    "lat": 45.3667,
+    "lon": 40.1833,
+    "kind": "settlement",
+    "aliases": [
+      "тбилисский"
+    ]
+  },
+  {
+    "name": "Темрюк",
+    "region": "RU-KRASNODAR",
+    "lat": 45.26667,
+    "lon": 37.38333,
+    "kind": "city",
+    "aliases": [
+      "темрюкский"
+    ]
+  },
+  {
+    "name": "Тимашёвск",
+    "region": "RU-KRASNODAR",
+    "lat": 45.61667,
+    "lon": 38.93333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Тихорецк",
+    "region": "RU-KRASNODAR",
+    "lat": 45.85,
+    "lon": 40.11667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Туапсе",
+    "region": "RU-KRASNODAR",
+    "lat": 44.10002,
+    "lon": 39.08322,
+    "kind": "city",
+    "aliases": [
+      "туапсинский"
+    ]
+  },
+  {
+    "name": "Усть-Лабинск",
+    "region": "RU-KRASNODAR",
+    "lat": 45.21528,
+    "lon": 39.68944,
+    "kind": "city",
+    "aliases": [
+      "усть-лабинский"
+    ]
+  },
+  {
+    "name": "Хадыженск",
+    "region": "RU-KRASNODAR",
+    "lat": 44.42389,
+    "lon": 39.53722,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Большое Солдатское",
+    "region": "RU-KURSK",
+    "lat": 51.0333,
+    "lon": 35.5,
+    "kind": "settlement",
+    "aliases": [
+      "большесолдатский"
+    ]
+  },
+  {
+    "name": "Глушково",
+    "region": "RU-KURSK",
+    "lat": 51.3333,
+    "lon": 34.6333,
+    "kind": "settlement",
+    "aliases": [
+      "глушковский"
+    ]
+  },
+  {
+    "name": "Дмитриев",
+    "region": "RU-KURSK",
+    "lat": 52.12889,
+    "lon": 35.07556,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Железногорск",
+    "region": "RU-KURSK",
+    "lat": 52.33917,
+    "lon": 35.35158,
+    "kind": "city",
+    "aliases": [
+      "железногорский"
+    ]
+  },
+  {
+    "name": "Золотухино",
+    "region": "RU-KURSK",
+    "lat": 52.0333,
+    "lon": 36.3667,
+    "kind": "settlement",
+    "aliases": [
+      "золотухинский"
+    ]
+  },
+  {
+    "name": "Касторное",
+    "region": "RU-KURSK",
+    "lat": 51.8333,
+    "lon": 38.1333,
+    "kind": "settlement",
+    "aliases": [
+      "касторенский"
+    ]
+  },
+  {
+    "name": "Коренево",
+    "region": "RU-KURSK",
+    "lat": 51.4167,
+    "lon": 34.65,
+    "kind": "settlement",
+    "aliases": [
+      "кореневский"
+    ]
+  },
+  {
+    "name": "Курск",
+    "region": "RU-KURSK",
+    "lat": 51.71667,
+    "lon": 36.18333,
+    "kind": "city",
+    "aliases": [
+      "курский"
+    ]
+  },
+  {
+    "name": "Курчатов",
+    "region": "RU-KURSK",
+    "lat": 51.66667,
+    "lon": 35.65,
+    "kind": "city",
+    "aliases": [
+      "курчатовский"
+    ]
+  },
+  {
+    "name": "Льгов",
+    "region": "RU-KURSK",
+    "lat": 51.66667,
+    "lon": 35.26667,
+    "kind": "settlement",
+    "aliases": [
+      "льговский"
+    ]
+  },
+  {
+    "name": "Мантурово",
+    "region": "RU-KURSK",
+    "lat": 51.45,
+    "lon": 37.1167,
+    "kind": "settlement",
+    "aliases": [
+      "мантуровский"
+    ]
+  },
+  {
+    "name": "Медвенка",
+    "region": "RU-KURSK",
+    "lat": 51.4167,
+    "lon": 36.1,
+    "kind": "settlement",
+    "aliases": [
+      "медвенский"
+    ]
+  },
+  {
+    "name": "Обоянь",
+    "region": "RU-KURSK",
+    "lat": 51.21111,
+    "lon": 36.27639,
+    "kind": "settlement",
+    "aliases": [
+      "обоянский"
+    ]
+  },
+  {
+    "name": "Поныри",
+    "region": "RU-KURSK",
+    "lat": 52.3167,
+    "lon": 36.3,
+    "kind": "settlement",
+    "aliases": [
+      "поныровский"
+    ]
+  },
+  {
+    "name": "Пристень",
+    "region": "RU-KURSK",
+    "lat": 51.2333,
+    "lon": 36.6833,
+    "kind": "settlement",
+    "aliases": [
+      "пристенский"
+    ]
+  },
+  {
+    "name": "Рыльск",
+    "region": "RU-KURSK",
+    "lat": 51.56667,
+    "lon": 34.68333,
+    "kind": "settlement",
+    "aliases": [
+      "рыльский"
+    ]
+  },
+  {
+    "name": "Суджа",
+    "region": "RU-KURSK",
+    "lat": 51.19069,
+    "lon": 35.27083,
+    "kind": "settlement",
+    "aliases": [
+      "суджанский"
+    ]
+  },
+  {
+    "name": "Тим",
+    "region": "RU-KURSK",
+    "lat": 51.6167,
+    "lon": 37.1167,
+    "kind": "settlement",
+    "aliases": [
+      "тимский"
+    ]
+  },
+  {
+    "name": "Тёткино",
+    "region": "RU-KURSK",
+    "lat": 51.2833,
+    "lon": 34.2833,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Фатеж",
+    "region": "RU-KURSK",
+    "lat": 52.08944,
+    "lon": 35.85889,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Хомутовка",
+    "region": "RU-KURSK",
+    "lat": 51.9167,
+    "lon": 34.5667,
+    "kind": "settlement",
+    "aliases": [
+      "хомутовский"
+    ]
+  },
+  {
+    "name": "Черемисиново",
+    "region": "RU-KURSK",
+    "lat": 51.8833,
+    "lon": 37.25,
+    "kind": "settlement",
+    "aliases": [
+      "черемисиновский"
+    ]
+  },
+  {
+    "name": "Щигры",
+    "region": "RU-KURSK",
+    "lat": 51.88111,
+    "lon": 36.90306,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Бокситогорск",
+    "region": "RU-LENINGRAD",
+    "lat": 59.47358,
+    "lon": 33.84768,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Волосово",
+    "region": "RU-LENINGRAD",
+    "lat": 59.44727,
+    "lon": 29.48482,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Волхов",
+    "region": "RU-LENINGRAD",
+    "lat": 59.90054,
+    "lon": 32.35268,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Всеволожск",
+    "region": "RU-LENINGRAD",
+    "lat": 60.02132,
+    "lon": 30.65408,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Выборг",
+    "region": "RU-LENINGRAD",
+    "lat": 60.7105,
+    "lon": 28.74978,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Высоцк",
+    "region": "RU-LENINGRAD",
+    "lat": 60.6256,
+    "lon": 28.56828,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Гатчина",
+    "region": "RU-LENINGRAD",
+    "lat": 59.56841,
+    "lon": 30.12289,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Ивангород",
+    "region": "RU-LENINGRAD",
+    "lat": 59.37649,
+    "lon": 28.21971,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Каменногорск",
+    "region": "RU-LENINGRAD",
+    "lat": 60.95081,
+    "lon": 29.13088,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Кингисепп",
+    "region": "RU-LENINGRAD",
+    "lat": 59.37805,
+    "lon": 28.60121,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Кириши",
+    "region": "RU-LENINGRAD",
+    "lat": 59.44969,
+    "lon": 32.00872,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Кировск",
+    "region": "RU-LENINGRAD",
+    "lat": 59.87533,
+    "lon": 30.98146,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Колтуши",
+    "region": "RU-LENINGRAD",
+    "lat": 59.93292,
+    "lon": 30.65538,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Коммунар",
+    "region": "RU-LENINGRAD",
+    "lat": 59.62161,
+    "lon": 30.39348,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Кудрово",
+    "region": "RU-LENINGRAD",
+    "lat": 59.90849,
+    "lon": 30.51357,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Лодейное Поле",
+    "region": "RU-LENINGRAD",
+    "lat": 60.7343,
+    "lon": 33.54318,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Луга",
+    "region": "RU-LENINGRAD",
+    "lat": 58.73333,
+    "lon": 29.85,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Любань",
+    "region": "RU-LENINGRAD",
+    "lat": 59.3493,
+    "lon": 31.24858,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Мурино",
+    "region": "RU-LENINGRAD",
+    "lat": 60.05128,
+    "lon": 30.43858,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Никольское",
+    "region": "RU-LENINGRAD",
+    "lat": 59.70464,
+    "lon": 30.78898,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Новая Ладога",
+    "region": "RU-LENINGRAD",
+    "lat": 60.1064,
+    "lon": 32.31618,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Отрадное",
+    "region": "RU-LENINGRAD",
+    "lat": 59.77409,
+    "lon": 30.79455,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Пикалёво",
+    "region": "RU-LENINGRAD",
+    "lat": 59.51268,
+    "lon": 34.17748,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Подпорожье",
+    "region": "RU-LENINGRAD",
+    "lat": 60.9121,
+    "lon": 34.16795,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Приморск",
+    "region": "RU-LENINGRAD",
+    "lat": 60.36601,
+    "lon": 28.61356,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Приозерск",
+    "region": "RU-LENINGRAD",
+    "lat": 61.03598,
+    "lon": 30.11559,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Светогорск",
+    "region": "RU-LENINGRAD",
+    "lat": 61.10833,
+    "lon": 28.85833,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Сертолово",
+    "region": "RU-LENINGRAD",
+    "lat": 60.14161,
+    "lon": 30.21188,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Сланцы",
+    "region": "RU-LENINGRAD",
+    "lat": 59.11779,
+    "lon": 28.08815,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Сосновый Бор",
+    "region": "RU-LENINGRAD",
+    "lat": 59.9,
+    "lon": 29.08611,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Сясьстрой",
+    "region": "RU-LENINGRAD",
+    "lat": 60.13706,
+    "lon": 32.56128,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Тихвин",
+    "region": "RU-LENINGRAD",
+    "lat": 59.64421,
+    "lon": 33.5421,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Тосно",
+    "region": "RU-LENINGRAD",
+    "lat": 59.54118,
+    "lon": 30.87501,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Шлиссельбург",
+    "region": "RU-LENINGRAD",
+    "lat": 59.94496,
+    "lon": 31.03475,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Грязи",
+    "region": "RU-LIPETSK",
+    "lat": 52.5,
+    "lon": 39.93333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Данков",
+    "region": "RU-LIPETSK",
+    "lat": 53.25,
+    "lon": 39.15,
+    "kind": "settlement",
+    "aliases": [
+      "данковский"
+    ]
+  },
+  {
+    "name": "Елец",
+    "region": "RU-LIPETSK",
+    "lat": 52.61667,
+    "lon": 38.46667,
+    "kind": "city",
+    "aliases": [
+      "елецкий"
+    ]
+  },
+  {
+    "name": "Задонск",
+    "region": "RU-LIPETSK",
+    "lat": 52.38333,
+    "lon": 38.91667,
+    "kind": "settlement",
+    "aliases": [
+      "задонский"
+    ]
+  },
+  {
+    "name": "Лебедянь",
+    "region": "RU-LIPETSK",
+    "lat": 53.01155,
+    "lon": 39.12812,
+    "kind": "city",
+    "aliases": [
+      "лебедянский"
+    ]
+  },
+  {
+    "name": "Липецк",
+    "region": "RU-LIPETSK",
+    "lat": 52.61667,
+    "lon": 39.6,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Усмань",
+    "region": "RU-LIPETSK",
+    "lat": 52.05,
+    "lon": 39.73333,
+    "kind": "settlement",
+    "aliases": [
+      "усманский"
+    ]
+  },
+  {
+    "name": "Чаплыгин",
+    "region": "RU-LIPETSK",
+    "lat": 53.24167,
+    "lon": 39.96667,
+    "kind": "settlement",
+    "aliases": [
+      "чаплыгинский"
+    ]
+  },
+  {
+    "name": "Алчевск",
+    "region": "RU-LNR",
+    "lat": 48.4667,
+    "lon": 38.8,
+    "kind": "city",
+    "aliases": [
+      "алчевский"
+    ]
+  },
+  {
+    "name": "Антрацит",
+    "region": "RU-LNR",
+    "lat": 48.1167,
+    "lon": 39.0833,
+    "kind": "city",
+    "aliases": [
+      "антрацитовский"
+    ]
+  },
+  {
+    "name": "Брянка",
+    "region": "RU-LNR",
+    "lat": 48.5167,
+    "lon": 38.65,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Горское",
+    "region": "RU-LNR",
+    "lat": 48.7333,
+    "lon": 38.6333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Золотое",
+    "region": "RU-LNR",
+    "lat": 48.7833,
+    "lon": 38.5833,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Кировск",
+    "region": "RU-LNR",
+    "lat": 48.6333,
+    "lon": 38.7333,
+    "kind": "city",
+    "aliases": [
+      "кировский луганский"
+    ]
+  },
+  {
+    "name": "Краснодон",
+    "region": "RU-LNR",
+    "lat": 48.3,
+    "lon": 39.7333,
+    "kind": "city",
+    "aliases": [
+      "краснодонский"
+    ]
+  },
+  {
+    "name": "Красный Луч",
+    "region": "RU-LNR",
+    "lat": 48.0333,
+    "lon": 38.7833,
+    "kind": "city",
+    "aliases": [
+      "краснолучский"
+    ]
+  },
+  {
+    "name": "Кременная",
+    "region": "RU-LNR",
+    "lat": 49.05,
+    "lon": 38.2167,
+    "kind": "city",
+    "aliases": [
+      "кременской"
+    ]
+  },
+  {
+    "name": "Лисичанск",
+    "region": "RU-LNR",
+    "lat": 48.9034,
+    "lon": 38.4424,
+    "kind": "city",
+    "aliases": [
+      "лисичанский"
+    ]
+  },
+  {
+    "name": "Луганск",
+    "region": "RU-LNR",
+    "lat": 48.574,
+    "lon": 39.3078,
+    "kind": "city",
+    "aliases": [
+      "луганский"
+    ]
+  },
+  {
+    "name": "Лутугино",
+    "region": "RU-LNR",
+    "lat": 48.4,
+    "lon": 39.2167,
+    "kind": "city",
+    "aliases": [
+      "лутугинский"
+    ]
+  },
+  {
+    "name": "Молодогвардейск",
+    "region": "RU-LNR",
+    "lat": 48.35,
+    "lon": 39.6667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Новодружеск",
+    "region": "RU-LNR",
+    "lat": 48.9333,
+    "lon": 38.4333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Первомайск",
+    "region": "RU-LNR",
+    "lat": 48.6333,
+    "lon": 38.55,
+    "kind": "city",
+    "aliases": [
+      "первомайский луганский"
+    ]
+  },
+  {
+    "name": "Перевальск",
+    "region": "RU-LNR",
+    "lat": 48.4333,
+    "lon": 38.8167,
+    "kind": "city",
+    "aliases": [
+      "перевальский"
+    ]
+  },
+  {
+    "name": "Попасная",
+    "region": "RU-LNR",
+    "lat": 48.6333,
+    "lon": 38.3833,
+    "kind": "city",
+    "aliases": [
+      "попаснянский"
+    ]
+  },
+  {
+    "name": "Приволье",
+    "region": "RU-LNR",
+    "lat": 49.0167,
+    "lon": 38.45,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Ровеньки",
+    "region": "RU-LNR",
+    "lat": 48.0833,
+    "lon": 39.3667,
+    "kind": "city",
+    "aliases": [
+      "ровеньковский"
+    ]
+  },
+  {
+    "name": "Рубежное",
+    "region": "RU-LNR",
+    "lat": 49.01,
+    "lon": 38.3833,
+    "kind": "city",
+    "aliases": [
+      "рубежанский"
+    ]
+  },
+  {
+    "name": "Сватово",
+    "region": "RU-LNR",
+    "lat": 49.4167,
+    "lon": 38.15,
+    "kind": "city",
+    "aliases": [
+      "сватовский"
+    ]
+  },
+  {
+    "name": "Северодонецк",
+    "region": "RU-LNR",
+    "lat": 48.9481,
+    "lon": 38.4916,
+    "kind": "city",
+    "aliases": [
+      "северодонецкий"
+    ]
+  },
+  {
+    "name": "Старобельск",
+    "region": "RU-LNR",
+    "lat": 49.2833,
+    "lon": 38.9,
+    "kind": "city",
+    "aliases": [
+      "старобельский"
+    ]
+  },
+  {
+    "name": "Стаханов",
+    "region": "RU-LNR",
+    "lat": 48.5667,
+    "lon": 38.65,
+    "kind": "city",
+    "aliases": [
+      "стахановский"
+    ]
+  },
+  {
+    "name": "Суходольск",
+    "region": "RU-LNR",
+    "lat": 48.3833,
+    "lon": 39.7167,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Счастье",
+    "region": "RU-LNR",
+    "lat": 48.7333,
+    "lon": 39.2333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Апрелевка",
+    "region": "RU-MOSCOW",
+    "lat": 55.53333,
+    "lon": 37.05,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Балашиха",
+    "region": "RU-MOSCOW",
+    "lat": 55.8,
+    "lon": 37.93333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Белоозёрский",
+    "region": "RU-MOSCOW",
+    "lat": 55.46139,
+    "lon": 38.44222,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Бронницы",
+    "region": "RU-MOSCOW",
+    "lat": 55.42278,
+    "lon": 38.25889,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Верея",
+    "region": "RU-MOSCOW",
+    "lat": 55.33333,
+    "lon": 36.18333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Видное",
+    "region": "RU-MOSCOW",
+    "lat": 55.55,
+    "lon": 37.7,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Волоколамск",
+    "region": "RU-MOSCOW",
+    "lat": 56.03333,
+    "lon": 35.95,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Воскресенск",
+    "region": "RU-MOSCOW",
+    "lat": 55.32333,
+    "lon": 38.68056,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Высоковск",
+    "region": "RU-MOSCOW",
+    "lat": 56.31667,
+    "lon": 36.55,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Голицыно",
+    "region": "RU-MOSCOW",
+    "lat": 55.61472,
+    "lon": 36.98722,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Дедовск",
+    "region": "RU-MOSCOW",
+    "lat": 55.86667,
+    "lon": 37.13333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Дзержинский",
+    "region": "RU-MOSCOW",
+    "lat": 55.63333,
+    "lon": 37.85,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Дмитров",
+    "region": "RU-MOSCOW",
+    "lat": 56.34667,
+    "lon": 37.52167,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Долгопрудный",
+    "region": "RU-MOSCOW",
+    "lat": 55.93333,
+    "lon": 37.5,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Домодедово",
+    "region": "RU-MOSCOW",
+    "lat": 55.44389,
+    "lon": 37.75806,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Дрезна",
+    "region": "RU-MOSCOW",
+    "lat": 55.74444,
+    "lon": 38.84944,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Дубна",
+    "region": "RU-MOSCOW",
+    "lat": 56.75,
+    "lon": 37.15,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Егорьевск",
+    "region": "RU-MOSCOW",
+    "lat": 55.38333,
+    "lon": 39.03361,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Жуковский",
+    "region": "RU-MOSCOW",
+    "lat": 55.60111,
+    "lon": 38.11611,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Зарайск",
+    "region": "RU-MOSCOW",
+    "lat": 54.76528,
+    "lon": 38.88361,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Звенигород",
+    "region": "RU-MOSCOW",
+    "lat": 55.73333,
+    "lon": 36.85,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Ивантеевка",
+    "region": "RU-MOSCOW",
+    "lat": 55.97,
+    "lon": 37.92,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Истра",
+    "region": "RU-MOSCOW",
+    "lat": 55.91667,
+    "lon": 36.86667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Кашира",
+    "region": "RU-MOSCOW",
+    "lat": 54.83333,
+    "lon": 38.15,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Клин",
+    "region": "RU-MOSCOW",
+    "lat": 56.33389,
+    "lon": 36.7125,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Коломна",
+    "region": "RU-MOSCOW",
+    "lat": 55.09389,
+    "lon": 38.76806,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Королёв",
+    "region": "RU-MOSCOW",
+    "lat": 55.91667,
+    "lon": 37.81667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Котельники",
+    "region": "RU-MOSCOW",
+    "lat": 55.6625,
+    "lon": 37.86722,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Красноармейск",
+    "region": "RU-MOSCOW",
+    "lat": 56.12278,
+    "lon": 38.14611,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Красногорск",
+    "region": "RU-MOSCOW",
+    "lat": 55.81667,
+    "lon": 37.33333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Краснозаводск",
+    "region": "RU-MOSCOW",
+    "lat": 56.43806,
+    "lon": 38.22944,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Краснознаменск",
+    "region": "RU-MOSCOW",
+    "lat": 55.6,
+    "lon": 37.03333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Кубинка",
+    "region": "RU-MOSCOW",
+    "lat": 55.57639,
+    "lon": 36.69472,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Куровское",
+    "region": "RU-MOSCOW",
+    "lat": 55.58333,
+    "lon": 38.91667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Ликино-Дулёво",
+    "region": "RU-MOSCOW",
+    "lat": 55.71528,
+    "lon": 38.95778,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Лобня",
+    "region": "RU-MOSCOW",
+    "lat": 56.01194,
+    "lon": 37.47444,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Лосино-Петровский",
+    "region": "RU-MOSCOW",
+    "lat": 55.86667,
+    "lon": 38.2,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Луховицы",
+    "region": "RU-MOSCOW",
+    "lat": 54.96667,
+    "lon": 39.025,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Лыткарино",
+    "region": "RU-MOSCOW",
+    "lat": 55.58361,
+    "lon": 37.90556,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Люберцы",
+    "region": "RU-MOSCOW",
+    "lat": 55.68139,
+    "lon": 37.89389,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Можайск",
+    "region": "RU-MOSCOW",
+    "lat": 55.5,
+    "lon": 36.03333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Мытищи",
+    "region": "RU-MOSCOW",
+    "lat": 55.91667,
+    "lon": 37.73333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Наро-Фоминск",
+    "region": "RU-MOSCOW",
+    "lat": 55.38333,
+    "lon": 36.73333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Ногинск",
+    "region": "RU-MOSCOW",
+    "lat": 55.85,
+    "lon": 38.43333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Одинцово",
+    "region": "RU-MOSCOW",
+    "lat": 55.67333,
+    "lon": 37.27333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Озёры",
+    "region": "RU-MOSCOW",
+    "lat": 54.85787,
+    "lon": 38.54382,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Орехово-Зуево",
+    "region": "RU-MOSCOW",
+    "lat": 55.8,
+    "lon": 38.96667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Павловский Посад",
+    "region": "RU-MOSCOW",
+    "lat": 55.78333,
+    "lon": 38.65,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Пересвет",
+    "region": "RU-MOSCOW",
+    "lat": 56.41667,
+    "lon": 38.175,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Подольск",
+    "region": "RU-MOSCOW",
+    "lat": 55.42972,
+    "lon": 37.54444,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Протвино",
+    "region": "RU-MOSCOW",
+    "lat": 54.87944,
+    "lon": 37.21389,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Пушкино",
+    "region": "RU-MOSCOW",
+    "lat": 56.01667,
+    "lon": 37.85,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Пущино",
+    "region": "RU-MOSCOW",
+    "lat": 54.83333,
+    "lon": 37.61667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Раменское",
+    "region": "RU-MOSCOW",
+    "lat": 55.56667,
+    "lon": 38.21667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Реутов",
+    "region": "RU-MOSCOW",
+    "lat": 55.76061,
+    "lon": 37.85519,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Рошаль",
+    "region": "RU-MOSCOW",
+    "lat": 55.66361,
+    "lon": 39.865,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Руза",
+    "region": "RU-MOSCOW",
+    "lat": 55.69889,
+    "lon": 36.19528,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Сергиев Посад",
+    "region": "RU-MOSCOW",
+    "lat": 56.3,
+    "lon": 38.13333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Серпухов",
+    "region": "RU-MOSCOW",
+    "lat": 54.91667,
+    "lon": 37.4,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Солнечногорск",
+    "region": "RU-MOSCOW",
+    "lat": 56.18511,
+    "lon": 36.97762,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Старая Купавна",
+    "region": "RU-MOSCOW",
+    "lat": 55.8,
+    "lon": 38.18333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Ступино",
+    "region": "RU-MOSCOW",
+    "lat": 54.88694,
+    "lon": 38.07722,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Талдом",
+    "region": "RU-MOSCOW",
+    "lat": 56.73333,
+    "lon": 37.53333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Фрязино",
+    "region": "RU-MOSCOW",
+    "lat": 55.95,
+    "lon": 38.05,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Химки",
+    "region": "RU-MOSCOW",
+    "lat": 55.88917,
+    "lon": 37.445,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Хотьково",
+    "region": "RU-MOSCOW",
+    "lat": 56.25,
+    "lon": 37.98333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Черноголовка",
+    "region": "RU-MOSCOW",
+    "lat": 56.01472,
+    "lon": 38.38972,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Чехов",
+    "region": "RU-MOSCOW",
+    "lat": 55.145,
+    "lon": 37.45556,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Шатура",
+    "region": "RU-MOSCOW",
+    "lat": 55.57767,
+    "lon": 39.54463,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Щёлково",
+    "region": "RU-MOSCOW",
+    "lat": 55.91667,
+    "lon": 38.0,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Электрогорск",
+    "region": "RU-MOSCOW",
+    "lat": 55.88333,
+    "lon": 38.78333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Электросталь",
+    "region": "RU-MOSCOW",
+    "lat": 55.8,
+    "lon": 38.45,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Электроугли",
+    "region": "RU-MOSCOW",
+    "lat": 55.71667,
+    "lon": 38.21667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Яхрома",
+    "region": "RU-MOSCOW",
+    "lat": 56.28333,
+    "lon": 37.48333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Зеленоград",
+    "region": "RU-MOSCOW-CITY",
+    "lat": 55.99792,
+    "lon": 37.19042,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Москва",
+    "region": "RU-MOSCOW-CITY",
+    "lat": 55.75583,
+    "lon": 37.61778,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Московский",
+    "region": "RU-MOSCOW-CITY",
+    "lat": 55.6,
+    "lon": 37.35,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Троицк",
+    "region": "RU-MOSCOW-CITY",
+    "lat": 55.467,
+    "lon": 37.3,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Щербинка",
+    "region": "RU-MOSCOW-CITY",
+    "lat": 55.5,
+    "lon": 37.56667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Арзамас",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 55.38333,
+    "lon": 43.8,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Балахна",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 56.48083,
+    "lon": 43.54028,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Богородск",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 56.09972,
+    "lon": 43.50722,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Бор",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 56.36028,
+    "lon": 44.05917,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Ветлуга",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 57.85556,
+    "lon": 45.78111,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Володарск",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 56.23333,
+    "lon": 43.2,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Ворсма",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 55.98333,
+    "lon": 43.26667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Выкса",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 55.31944,
+    "lon": 42.17306,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Горбатов",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 56.13333,
+    "lon": 43.06667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Городец",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 56.65028,
+    "lon": 43.47028,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Дзержинск",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 56.23333,
+    "lon": 43.45,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Заволжье",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 56.6425,
+    "lon": 43.39278,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Княгинино",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 55.81667,
+    "lon": 45.03333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Кстово",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 56.15167,
+    "lon": 44.19556,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Кулебаки",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 55.41667,
+    "lon": 42.51667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Лукоянов",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 55.03833,
+    "lon": 44.49778,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Лысково",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 56.01278,
+    "lon": 45.02528,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Навашино",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 55.53333,
+    "lon": 42.2,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Нижний Новгород",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 56.32694,
+    "lon": 44.0075,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Павлово",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 55.96194,
+    "lon": 43.09,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Первомайск",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 54.86667,
+    "lon": 43.8,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Перевоз",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 55.6,
+    "lon": 44.55,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Саров",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 54.93333,
+    "lon": 43.31667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Семёнов",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 56.78944,
+    "lon": 44.49056,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Сергач",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 55.53333,
+    "lon": 45.46667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Урень",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 57.46667,
+    "lon": 45.78333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Чкаловск",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 56.76667,
+    "lon": 43.25,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Шахунья",
+    "region": "RU-NIZHNY-NOVGOROD",
+    "lat": 57.67472,
+    "lon": 46.62083,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Болхов",
+    "region": "RU-OREL",
+    "lat": 53.45,
+    "lon": 36.0,
+    "kind": "settlement",
+    "aliases": [
+      "болховский"
+    ]
+  },
+  {
+    "name": "Дмитровск",
+    "region": "RU-OREL",
+    "lat": 52.5055,
+    "lon": 35.14148,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Ливны",
+    "region": "RU-OREL",
+    "lat": 52.42531,
+    "lon": 37.60831,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Малоархангельск",
+    "region": "RU-OREL",
+    "lat": 52.4,
+    "lon": 36.5,
+    "kind": "settlement",
+    "aliases": [
+      "малоархангельский"
+    ]
+  },
+  {
+    "name": "Мценск",
+    "region": "RU-OREL",
+    "lat": 53.27833,
+    "lon": 36.575,
+    "kind": "city",
+    "aliases": [
+      "мценский"
+    ]
+  },
+  {
+    "name": "Новосиль",
+    "region": "RU-OREL",
+    "lat": 52.96667,
+    "lon": 37.05,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Орёл",
+    "region": "RU-OREL",
+    "lat": 52.96667,
+    "lon": 36.08333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Абдулино",
+    "region": "RU-ORENBURG",
+    "lat": 53.68333,
+    "lon": 53.65,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Бугуруслан",
+    "region": "RU-ORENBURG",
+    "lat": 53.61667,
+    "lon": 52.41667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Бузулук",
+    "region": "RU-ORENBURG",
+    "lat": 52.76667,
+    "lon": 52.26667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Гай",
+    "region": "RU-ORENBURG",
+    "lat": 51.46667,
+    "lon": 58.45,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Кувандык",
+    "region": "RU-ORENBURG",
+    "lat": 51.48333,
+    "lon": 57.35,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Медногорск",
+    "region": "RU-ORENBURG",
+    "lat": 51.42209,
+    "lon": 57.5953,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Новотроицк",
+    "region": "RU-ORENBURG",
+    "lat": 51.20667,
+    "lon": 58.32806,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Оренбург",
+    "region": "RU-ORENBURG",
+    "lat": 51.76667,
+    "lon": 55.1,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Орск",
+    "region": "RU-ORENBURG",
+    "lat": 51.2,
+    "lon": 58.61667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Соль-Илецк",
+    "region": "RU-ORENBURG",
+    "lat": 51.16667,
+    "lon": 54.98333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Сорочинск",
+    "region": "RU-ORENBURG",
+    "lat": 52.43333,
+    "lon": 53.15,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Ясный",
+    "region": "RU-ORENBURG",
+    "lat": 51.03333,
+    "lon": 59.86667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Белинский",
+    "region": "RU-PENZA",
+    "lat": 52.96667,
+    "lon": 43.41667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Городище",
+    "region": "RU-PENZA",
+    "lat": 53.26667,
+    "lon": 45.7,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Заречный",
+    "region": "RU-PENZA",
+    "lat": 53.2,
+    "lon": 45.16667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Каменка",
+    "region": "RU-PENZA",
+    "lat": 53.18333,
+    "lon": 44.05,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Кузнецк",
+    "region": "RU-PENZA",
+    "lat": 53.11667,
+    "lon": 46.6,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Нижний Ломов",
+    "region": "RU-PENZA",
+    "lat": 53.53333,
+    "lon": 43.68333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Никольск",
+    "region": "RU-PENZA",
+    "lat": 53.71667,
+    "lon": 46.08333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Пенза",
+    "region": "RU-PENZA",
+    "lat": 53.2,
+    "lon": 45.0,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Сердобск",
+    "region": "RU-PENZA",
+    "lat": 52.46667,
+    "lon": 44.21667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Спасск",
+    "region": "RU-PENZA",
+    "lat": 53.93333,
+    "lon": 43.18333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Сурск",
+    "region": "RU-PENZA",
+    "lat": 53.08333,
+    "lon": 45.7,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Великие Луки",
+    "region": "RU-PSKOV",
+    "lat": 56.35,
+    "lon": 30.51667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Гдов",
+    "region": "RU-PSKOV",
+    "lat": 58.73333,
+    "lon": 27.81667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Дно",
+    "region": "RU-PSKOV",
+    "lat": 57.83333,
+    "lon": 29.96667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Невель",
+    "region": "RU-PSKOV",
+    "lat": 56.01667,
+    "lon": 29.93333,
+    "kind": "settlement",
+    "aliases": [
+      "невельский"
+    ]
+  },
+  {
+    "name": "Новоржев",
+    "region": "RU-PSKOV",
+    "lat": 57.03333,
+    "lon": 29.33333,
+    "kind": "settlement",
+    "aliases": [
+      "новоржевский"
+    ]
+  },
+  {
+    "name": "Новосокольники",
+    "region": "RU-PSKOV",
+    "lat": 56.33333,
+    "lon": 30.15,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Опочка",
+    "region": "RU-PSKOV",
+    "lat": 56.71667,
+    "lon": 28.65,
+    "kind": "settlement",
+    "aliases": [
+      "опочецкий"
+    ]
+  },
+  {
+    "name": "Остров",
+    "region": "RU-PSKOV",
+    "lat": 57.33333,
+    "lon": 28.35,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Печоры",
+    "region": "RU-PSKOV",
+    "lat": 57.81667,
+    "lon": 27.6,
+    "kind": "settlement",
+    "aliases": [
+      "печорский"
+    ]
+  },
+  {
+    "name": "Порхов",
+    "region": "RU-PSKOV",
+    "lat": 57.76667,
+    "lon": 29.55,
+    "kind": "settlement",
+    "aliases": [
+      "порховский"
+    ]
+  },
+  {
+    "name": "Псков",
+    "region": "RU-PSKOV",
+    "lat": 57.81667,
+    "lon": 28.33333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Пустошка",
+    "region": "RU-PSKOV",
+    "lat": 56.33333,
+    "lon": 29.36667,
+    "kind": "settlement",
+    "aliases": [
+      "пустошкинский"
+    ]
+  },
+  {
+    "name": "Пыталово",
+    "region": "RU-PSKOV",
+    "lat": 57.06667,
+    "lon": 27.91667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Себеж",
+    "region": "RU-PSKOV",
+    "lat": 56.28333,
+    "lon": 28.48333,
+    "kind": "settlement",
+    "aliases": [
+      "себежский"
+    ]
+  },
+  {
+    "name": "Азов",
+    "region": "RU-ROSTOV",
+    "lat": 47.1,
+    "lon": 39.41667,
+    "kind": "city",
+    "aliases": [
+      "азовский"
+    ]
+  },
+  {
+    "name": "Аксай",
+    "region": "RU-ROSTOV",
+    "lat": 47.26667,
+    "lon": 39.86667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Багаевская",
+    "region": "RU-ROSTOV",
+    "lat": 47.3167,
+    "lon": 40.3833,
+    "kind": "settlement",
+    "aliases": [
+      "багаевский"
+    ]
+  },
+  {
+    "name": "Батайск",
+    "region": "RU-ROSTOV",
+    "lat": 47.13333,
+    "lon": 39.75,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Белая Калитва",
+    "region": "RU-ROSTOV",
+    "lat": 48.17472,
+    "lon": 40.79306,
+    "kind": "city",
+    "aliases": [
+      "белокалитвинский"
+    ]
+  },
+  {
+    "name": "Боковская",
+    "region": "RU-ROSTOV",
+    "lat": 49.2333,
+    "lon": 41.8333,
+    "kind": "settlement",
+    "aliases": [
+      "боковский"
+    ]
+  },
+  {
+    "name": "Вешенская",
+    "region": "RU-ROSTOV",
+    "lat": 49.6333,
+    "lon": 41.7333,
+    "kind": "settlement",
+    "aliases": [
+      "вешенский"
+    ]
+  },
+  {
+    "name": "Волгодонск",
+    "region": "RU-ROSTOV",
+    "lat": 47.54,
+    "lon": 42.20722,
+    "kind": "city",
+    "aliases": [
+      "волгодонский"
+    ]
+  },
+  {
+    "name": "Гуково",
+    "region": "RU-ROSTOV",
+    "lat": 48.05,
+    "lon": 39.93333,
+    "kind": "city",
+    "aliases": [
+      "гуковский"
+    ]
+  },
+  {
+    "name": "Донецк",
+    "region": "RU-ROSTOV",
+    "lat": 48.33694,
+    "lon": 39.945,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Зверево",
+    "region": "RU-ROSTOV",
+    "lat": 48.01667,
+    "lon": 40.11667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Зерноград",
+    "region": "RU-ROSTOV",
+    "lat": 46.84652,
+    "lon": 40.30403,
+    "kind": "city",
+    "aliases": [
+      "зерноградский"
+    ]
+  },
+  {
+    "name": "Кагальницкая",
+    "region": "RU-ROSTOV",
+    "lat": 46.8833,
+    "lon": 40.15,
+    "kind": "settlement",
+    "aliases": [
+      "кагальницкий"
+    ]
+  },
+  {
+    "name": "Казанская",
+    "region": "RU-ROSTOV",
+    "lat": 49.8,
+    "lon": 41.15,
+    "kind": "settlement",
+    "aliases": [
+      "казанский"
+    ]
+  },
+  {
+    "name": "Каменск-Шахтинский",
+    "region": "RU-ROSTOV",
+    "lat": 48.31667,
+    "lon": 40.26667,
+    "kind": "city",
+    "aliases": [
+      "каменский"
+    ]
+  },
+  {
+    "name": "Константиновск",
+    "region": "RU-ROSTOV",
+    "lat": 47.58333,
+    "lon": 41.1,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Красный Сулин",
+    "region": "RU-ROSTOV",
+    "lat": 47.88333,
+    "lon": 40.06667,
+    "kind": "city",
+    "aliases": [
+      "красносулинский"
+    ]
+  },
+  {
+    "name": "Миллерово",
+    "region": "RU-ROSTOV",
+    "lat": 48.91667,
+    "lon": 40.4,
+    "kind": "city",
+    "aliases": [
+      "миллеровский"
+    ]
+  },
+  {
+    "name": "Милютинская",
+    "region": "RU-ROSTOV",
+    "lat": 48.6167,
+    "lon": 41.6667,
+    "kind": "settlement",
+    "aliases": [
+      "милютинский"
+    ]
+  },
+  {
+    "name": "Морозовск",
+    "region": "RU-ROSTOV",
+    "lat": 48.35,
+    "lon": 41.83333,
+    "kind": "city",
+    "aliases": [
+      "морозовский"
+    ]
+  },
+  {
+    "name": "Новочеркасск",
+    "region": "RU-ROSTOV",
+    "lat": 47.43583,
+    "lon": 40.09861,
+    "kind": "city",
+    "aliases": [
+      "новочеркасский"
+    ]
+  },
+  {
+    "name": "Новошахтинск",
+    "region": "RU-ROSTOV",
+    "lat": 47.76667,
+    "lon": 39.91667,
+    "kind": "city",
+    "aliases": [
+      "новошахтинский"
+    ]
+  },
+  {
+    "name": "Обливская",
+    "region": "RU-ROSTOV",
+    "lat": 48.5333,
+    "lon": 42.5,
+    "kind": "settlement",
+    "aliases": [
+      "обливский"
+    ]
+  },
+  {
+    "name": "Пролетарск",
+    "region": "RU-ROSTOV",
+    "lat": 46.70306,
+    "lon": 41.71917,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Ростов-на-Дону",
+    "region": "RU-ROSTOV",
+    "lat": 47.24056,
+    "lon": 39.71056,
+    "kind": "city",
+    "aliases": [
+      "ростовский"
+    ]
+  },
+  {
+    "name": "Сальск",
+    "region": "RU-ROSTOV",
+    "lat": 46.48333,
+    "lon": 41.53333,
+    "kind": "city",
+    "aliases": [
+      "сальский"
+    ]
+  },
+  {
+    "name": "Семикаракорск",
+    "region": "RU-ROSTOV",
+    "lat": 47.51667,
+    "lon": 40.8,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Советская",
+    "region": "RU-ROSTOV",
+    "lat": 49.0167,
+    "lon": 42.1167,
+    "kind": "settlement",
+    "aliases": [
+      "советский донской"
+    ]
+  },
+  {
+    "name": "Таганрог",
+    "region": "RU-ROSTOV",
+    "lat": 47.23917,
+    "lon": 38.88333,
+    "kind": "city",
+    "aliases": [
+      "таганрогский"
+    ]
+  },
+  {
+    "name": "Тацинская",
+    "region": "RU-ROSTOV",
+    "lat": 48.2,
+    "lon": 41.2833,
+    "kind": "settlement",
+    "aliases": [
+      "тацинский"
+    ]
+  },
+  {
+    "name": "Цимлянск",
+    "region": "RU-ROSTOV",
+    "lat": 47.64667,
+    "lon": 42.09472,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Шахты",
+    "region": "RU-ROSTOV",
+    "lat": 47.71221,
+    "lon": 40.20837,
+    "kind": "city",
+    "aliases": [
+      "шахтинский"
+    ]
+  },
+  {
+    "name": "Касимов",
+    "region": "RU-RYAZAN",
+    "lat": 54.95,
+    "lon": 41.39722,
+    "kind": "city",
+    "aliases": [
+      "касимовский"
+    ]
+  },
+  {
+    "name": "Кораблино",
+    "region": "RU-RYAZAN",
+    "lat": 53.91667,
+    "lon": 40.01667,
+    "kind": "settlement",
+    "aliases": [
+      "кораблинский"
+    ]
+  },
+  {
+    "name": "Михайлов",
+    "region": "RU-RYAZAN",
+    "lat": 54.23333,
+    "lon": 39.03333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Новомичуринск",
+    "region": "RU-RYAZAN",
+    "lat": 54.03333,
+    "lon": 39.75,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Рыбное",
+    "region": "RU-RYAZAN",
+    "lat": 54.73333,
+    "lon": 39.51667,
+    "kind": "city",
+    "aliases": [
+      "рыбновский"
+    ]
+  },
+  {
+    "name": "Ряжск",
+    "region": "RU-RYAZAN",
+    "lat": 53.71667,
+    "lon": 40.06667,
+    "kind": "city",
+    "aliases": [
+      "ряжский"
+    ]
+  },
+  {
+    "name": "Рязань",
+    "region": "RU-RYAZAN",
+    "lat": 54.61667,
+    "lon": 39.71667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Сасово",
+    "region": "RU-RYAZAN",
+    "lat": 54.35,
+    "lon": 41.91667,
+    "kind": "city",
+    "aliases": [
+      "сасовский"
+    ]
+  },
+  {
+    "name": "Скопин",
+    "region": "RU-RYAZAN",
+    "lat": 53.81667,
+    "lon": 39.55,
+    "kind": "city",
+    "aliases": [
+      "скопинский"
+    ]
+  },
+  {
+    "name": "Спас-Клепики",
+    "region": "RU-RYAZAN",
+    "lat": 55.13333,
+    "lon": 40.16667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Спасск-Рязанский",
+    "region": "RU-RYAZAN",
+    "lat": 54.4,
+    "lon": 40.38333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Шацк",
+    "region": "RU-RYAZAN",
+    "lat": 54.03333,
+    "lon": 41.7,
+    "kind": "settlement",
+    "aliases": [
+      "шацкий"
+    ]
+  },
+  {
+    "name": "Зеленогорск",
+    "region": "RU-SAINT-PETERSBURG",
+    "lat": 60.2,
+    "lon": 29.7,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Колпино",
+    "region": "RU-SAINT-PETERSBURG",
+    "lat": 59.75,
+    "lon": 30.6,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Красное Село",
+    "region": "RU-SAINT-PETERSBURG",
+    "lat": 59.73374,
+    "lon": 30.0862,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Кронштадт",
+    "region": "RU-SAINT-PETERSBURG",
+    "lat": 60.0,
+    "lon": 29.76667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Ломоносов",
+    "region": "RU-SAINT-PETERSBURG",
+    "lat": 59.91074,
+    "lon": 29.77647,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Павловск",
+    "region": "RU-SAINT-PETERSBURG",
+    "lat": 59.68333,
+    "lon": 30.43333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Петергоф",
+    "region": "RU-SAINT-PETERSBURG",
+    "lat": 59.88333,
+    "lon": 29.9,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Пушкин",
+    "region": "RU-SAINT-PETERSBURG",
+    "lat": 59.71667,
+    "lon": 30.41667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Санкт-Петербург",
+    "region": "RU-SAINT-PETERSBURG",
+    "lat": 59.95,
+    "lon": 30.31667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Сестрорецк",
+    "region": "RU-SAINT-PETERSBURG",
+    "lat": 60.1,
+    "lon": 29.96667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Жигулёвск",
+    "region": "RU-SAMARA",
+    "lat": 53.4,
+    "lon": 49.5,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Кинель",
+    "region": "RU-SAMARA",
+    "lat": 53.23333,
+    "lon": 50.61667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Нефтегорск",
+    "region": "RU-SAMARA",
+    "lat": 52.8,
+    "lon": 51.16667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Новокуйбышевск",
+    "region": "RU-SAMARA",
+    "lat": 53.1,
+    "lon": 49.91667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Октябрьск",
+    "region": "RU-SAMARA",
+    "lat": 53.16667,
+    "lon": 48.66667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Отрадный",
+    "region": "RU-SAMARA",
+    "lat": 53.36667,
+    "lon": 51.35,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Похвистнево",
+    "region": "RU-SAMARA",
+    "lat": 53.65,
+    "lon": 52.13333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Самара",
+    "region": "RU-SAMARA",
+    "lat": 53.18333,
+    "lon": 50.11667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Сызрань",
+    "region": "RU-SAMARA",
+    "lat": 53.16667,
+    "lon": 48.46667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Тольятти",
+    "region": "RU-SAMARA",
+    "lat": 53.51667,
+    "lon": 49.41667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Чапаевск",
+    "region": "RU-SAMARA",
+    "lat": 52.98333,
+    "lon": 49.71667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Аркадак",
+    "region": "RU-SARATOV",
+    "lat": 51.93333,
+    "lon": 43.5,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Аткарск",
+    "region": "RU-SARATOV",
+    "lat": 51.86667,
+    "lon": 45.0,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Балаково",
+    "region": "RU-SARATOV",
+    "lat": 52.03333,
+    "lon": 47.78333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Балашов",
+    "region": "RU-SARATOV",
+    "lat": 51.55,
+    "lon": 43.16667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Вольск",
+    "region": "RU-SARATOV",
+    "lat": 52.05,
+    "lon": 47.38333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Ершов",
+    "region": "RU-SARATOV",
+    "lat": 51.35,
+    "lon": 48.28333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Калининск",
+    "region": "RU-SARATOV",
+    "lat": 51.5,
+    "lon": 44.45,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Красноармейск",
+    "region": "RU-SARATOV",
+    "lat": 51.01667,
+    "lon": 45.7,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Красный Кут",
+    "region": "RU-SARATOV",
+    "lat": 50.95,
+    "lon": 46.96667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Маркс",
+    "region": "RU-SARATOV",
+    "lat": 51.7,
+    "lon": 46.75,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Новоузенск",
+    "region": "RU-SARATOV",
+    "lat": 50.45,
+    "lon": 48.15,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Петровск",
+    "region": "RU-SARATOV",
+    "lat": 52.31667,
+    "lon": 45.38333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Пугачёв",
+    "region": "RU-SARATOV",
+    "lat": 52.01667,
+    "lon": 48.8,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Ртищево",
+    "region": "RU-SARATOV",
+    "lat": 52.25,
+    "lon": 43.78333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Саратов",
+    "region": "RU-SARATOV",
+    "lat": 51.53333,
+    "lon": 46.0,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Хвалынск",
+    "region": "RU-SARATOV",
+    "lat": 52.48333,
+    "lon": 48.1,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Шиханы",
+    "region": "RU-SARATOV",
+    "lat": 52.11378,
+    "lon": 47.19923,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Энгельс",
+    "region": "RU-SARATOV",
+    "lat": 51.46667,
+    "lon": 46.11667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Балаклава",
+    "region": "RU-SEVASTOPOL",
+    "lat": 44.5,
+    "lon": 33.6,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Инкерман",
+    "region": "RU-SEVASTOPOL",
+    "lat": 44.61417,
+    "lon": 33.60833,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Севастополь",
+    "region": "RU-SEVASTOPOL",
+    "lat": 44.6,
+    "lon": 33.53333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Велиж",
+    "region": "RU-SMOLENSK",
+    "lat": 55.6,
+    "lon": 31.2,
+    "kind": "settlement",
+    "aliases": [
+      "велижский"
+    ]
+  },
+  {
+    "name": "Вязьма",
+    "region": "RU-SMOLENSK",
+    "lat": 55.21028,
+    "lon": 34.285,
+    "kind": "city",
+    "aliases": [
+      "вяземский"
+    ]
+  },
+  {
+    "name": "Гагарин",
+    "region": "RU-SMOLENSK",
+    "lat": 55.55,
+    "lon": 35.0,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Демидов",
+    "region": "RU-SMOLENSK",
+    "lat": 55.26667,
+    "lon": 31.51667,
+    "kind": "settlement",
+    "aliases": [
+      "демидовский"
+    ]
+  },
+  {
+    "name": "Десногорск",
+    "region": "RU-SMOLENSK",
+    "lat": 54.15309,
+    "lon": 33.29029,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Дорогобуж",
+    "region": "RU-SMOLENSK",
+    "lat": 54.92,
+    "lon": 33.30778,
+    "kind": "settlement",
+    "aliases": [
+      "дорогобужский"
+    ]
+  },
+  {
+    "name": "Духовщина",
+    "region": "RU-SMOLENSK",
+    "lat": 55.2,
+    "lon": 32.41667,
+    "kind": "settlement",
+    "aliases": [
+      "духовщинский"
+    ]
+  },
+  {
+    "name": "Ельня",
+    "region": "RU-SMOLENSK",
+    "lat": 54.56667,
+    "lon": 33.16667,
+    "kind": "settlement",
+    "aliases": [
+      "ельнинский"
+    ]
+  },
+  {
+    "name": "Починок",
+    "region": "RU-SMOLENSK",
+    "lat": 54.4,
+    "lon": 32.45,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Рославль",
+    "region": "RU-SMOLENSK",
+    "lat": 53.94917,
+    "lon": 32.85694,
+    "kind": "city",
+    "aliases": [
+      "рославльский"
+    ]
+  },
+  {
+    "name": "Рудня",
+    "region": "RU-SMOLENSK",
+    "lat": 54.95,
+    "lon": 31.06667,
+    "kind": "settlement",
+    "aliases": [
+      "руднянский"
+    ]
+  },
+  {
+    "name": "Сафоново",
+    "region": "RU-SMOLENSK",
+    "lat": 55.1,
+    "lon": 33.25,
+    "kind": "city",
+    "aliases": [
+      "сафоновский"
+    ]
+  },
+  {
+    "name": "Смоленск",
+    "region": "RU-SMOLENSK",
+    "lat": 54.78278,
+    "lon": 32.04528,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Сычёвка",
+    "region": "RU-SMOLENSK",
+    "lat": 55.83333,
+    "lon": 34.28333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Ярцево",
+    "region": "RU-SMOLENSK",
+    "lat": 55.06667,
+    "lon": 32.68333,
+    "kind": "city",
+    "aliases": [
+      "ярцевский"
+    ]
+  },
+  {
+    "name": "Благодарный",
+    "region": "RU-STAVROPOL",
+    "lat": 45.1029,
+    "lon": 43.42515,
+    "kind": "city",
+    "aliases": [
+      "благодарненский"
+    ]
+  },
+  {
+    "name": "Будённовск",
+    "region": "RU-STAVROPOL",
+    "lat": 44.79,
+    "lon": 44.14,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Георгиевск",
+    "region": "RU-STAVROPOL",
+    "lat": 44.15,
+    "lon": 43.46667,
+    "kind": "city",
+    "aliases": [
+      "георгиевский"
+    ]
+  },
+  {
+    "name": "Ессентуки",
+    "region": "RU-STAVROPOL",
+    "lat": 44.04306,
+    "lon": 42.86417,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Железноводск",
+    "region": "RU-STAVROPOL",
+    "lat": 44.13333,
+    "lon": 43.03333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Зеленокумск",
+    "region": "RU-STAVROPOL",
+    "lat": 44.40701,
+    "lon": 43.87312,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Изобильный",
+    "region": "RU-STAVROPOL",
+    "lat": 45.36667,
+    "lon": 41.71667,
+    "kind": "city",
+    "aliases": [
+      "изобильненский"
+    ]
+  },
+  {
+    "name": "Ипатово",
+    "region": "RU-STAVROPOL",
+    "lat": 45.71667,
+    "lon": 42.9,
+    "kind": "city",
+    "aliases": [
+      "ипатовский"
+    ]
+  },
+  {
+    "name": "Кисловодск",
+    "region": "RU-STAVROPOL",
+    "lat": 43.90333,
+    "lon": 42.72444,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Лермонтов",
+    "region": "RU-STAVROPOL",
+    "lat": 44.10528,
+    "lon": 42.97167,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Минеральные Воды",
+    "region": "RU-STAVROPOL",
+    "lat": 44.20083,
+    "lon": 43.1125,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Михайловск",
+    "region": "RU-STAVROPOL",
+    "lat": 45.13001,
+    "lon": 42.02749,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Невинномысск",
+    "region": "RU-STAVROPOL",
+    "lat": 44.63333,
+    "lon": 41.93333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Нефтекумск",
+    "region": "RU-STAVROPOL",
+    "lat": 44.75056,
+    "lon": 44.97972,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Новоалександровск",
+    "region": "RU-STAVROPOL",
+    "lat": 45.49333,
+    "lon": 41.21694,
+    "kind": "city",
+    "aliases": [
+      "новоалександровский"
+    ]
+  },
+  {
+    "name": "Новопавловск",
+    "region": "RU-STAVROPOL",
+    "lat": 43.96361,
+    "lon": 43.63944,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Пятигорск",
+    "region": "RU-STAVROPOL",
+    "lat": 44.04997,
+    "lon": 43.06005,
+    "kind": "city",
+    "aliases": [
+      "пятигорский"
+    ]
+  },
+  {
+    "name": "Светлоград",
+    "region": "RU-STAVROPOL",
+    "lat": 45.33083,
+    "lon": 42.85111,
+    "kind": "city",
+    "aliases": [
+      "светлоградский"
+    ]
+  },
+  {
+    "name": "Ставрополь",
+    "region": "RU-STAVROPOL",
+    "lat": 45.03333,
+    "lon": 41.96667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Жердевка",
+    "region": "RU-TAMBOV",
+    "lat": 51.83333,
+    "lon": 41.46667,
+    "kind": "settlement",
+    "aliases": [
+      "жердевский"
+    ]
+  },
+  {
+    "name": "Кирсанов",
+    "region": "RU-TAMBOV",
+    "lat": 52.65,
+    "lon": 42.73333,
+    "kind": "settlement",
+    "aliases": [
+      "кирсановский"
+    ]
+  },
+  {
+    "name": "Котовск",
+    "region": "RU-TAMBOV",
+    "lat": 52.58333,
+    "lon": 41.5,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Мичуринск",
+    "region": "RU-TAMBOV",
+    "lat": 52.89222,
+    "lon": 40.49278,
+    "kind": "city",
+    "aliases": [
+      "мичуринский"
+    ]
+  },
+  {
+    "name": "Моршанск",
+    "region": "RU-TAMBOV",
+    "lat": 53.45,
+    "lon": 41.8,
+    "kind": "city",
+    "aliases": [
+      "моршанский"
+    ]
+  },
+  {
+    "name": "Рассказово",
+    "region": "RU-TAMBOV",
+    "lat": 52.66667,
+    "lon": 41.88333,
+    "kind": "city",
+    "aliases": [
+      "рассказовский"
+    ]
+  },
+  {
+    "name": "Тамбов",
+    "region": "RU-TAMBOV",
+    "lat": 52.71667,
+    "lon": 41.43333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Уварово",
+    "region": "RU-TAMBOV",
+    "lat": 51.98333,
+    "lon": 42.26667,
+    "kind": "city",
+    "aliases": [
+      "уваровский"
+    ]
+  },
+  {
+    "name": "Алексин",
+    "region": "RU-TULA",
+    "lat": 54.5,
+    "lon": 37.06667,
+    "kind": "city",
+    "aliases": [
+      "алексинский"
+    ]
+  },
+  {
+    "name": "Белёв",
+    "region": "RU-TULA",
+    "lat": 53.8,
+    "lon": 36.13333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Богородицк",
+    "region": "RU-TULA",
+    "lat": 53.76667,
+    "lon": 38.13333,
+    "kind": "city",
+    "aliases": [
+      "богородицкий"
+    ]
+  },
+  {
+    "name": "Болохово",
+    "region": "RU-TULA",
+    "lat": 54.08333,
+    "lon": 37.81667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Венёв",
+    "region": "RU-TULA",
+    "lat": 54.35,
+    "lon": 38.26667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Донской",
+    "region": "RU-TULA",
+    "lat": 53.96667,
+    "lon": 38.31667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Ефремов",
+    "region": "RU-TULA",
+    "lat": 53.14917,
+    "lon": 38.08259,
+    "kind": "city",
+    "aliases": [
+      "ефремовский"
+    ]
+  },
+  {
+    "name": "Кимовск",
+    "region": "RU-TULA",
+    "lat": 53.96667,
+    "lon": 38.53333,
+    "kind": "city",
+    "aliases": [
+      "кимовский"
+    ]
+  },
+  {
+    "name": "Киреевск",
+    "region": "RU-TULA",
+    "lat": 53.93333,
+    "lon": 37.93333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Липки",
+    "region": "RU-TULA",
+    "lat": 53.95,
+    "lon": 37.7,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Новомосковск",
+    "region": "RU-TULA",
+    "lat": 54.03333,
+    "lon": 38.26667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Плавск",
+    "region": "RU-TULA",
+    "lat": 53.7,
+    "lon": 37.3,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Советск",
+    "region": "RU-TULA",
+    "lat": 53.93333,
+    "lon": 37.63333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Суворов",
+    "region": "RU-TULA",
+    "lat": 54.11667,
+    "lon": 36.5,
+    "kind": "settlement",
+    "aliases": [
+      "суворовский"
+    ]
+  },
+  {
+    "name": "Тула",
+    "region": "RU-TULA",
+    "lat": 54.2,
+    "lon": 37.61667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Узловая",
+    "region": "RU-TULA",
+    "lat": 53.97914,
+    "lon": 38.16008,
+    "kind": "city",
+    "aliases": [
+      "узловский"
+    ]
+  },
+  {
+    "name": "Чекалин",
+    "region": "RU-TULA",
+    "lat": 54.1,
+    "lon": 36.25,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Щёкино",
+    "region": "RU-TULA",
+    "lat": 54.0,
+    "lon": 37.51667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Ясногорск",
+    "region": "RU-TULA",
+    "lat": 54.47938,
+    "lon": 37.69336,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Андреаполь",
+    "region": "RU-TVER",
+    "lat": 56.65,
+    "lon": 32.26667,
+    "kind": "settlement",
+    "aliases": [
+      "андреапольский"
+    ]
+  },
+  {
+    "name": "Бежецк",
+    "region": "RU-TVER",
+    "lat": 57.78333,
+    "lon": 36.7,
+    "kind": "city",
+    "aliases": [
+      "бежецкий"
+    ]
+  },
+  {
+    "name": "Белый",
+    "region": "RU-TVER",
+    "lat": 55.83333,
+    "lon": 32.93333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Бологое",
+    "region": "RU-TVER",
+    "lat": 57.87083,
+    "lon": 34.07361,
+    "kind": "city",
+    "aliases": [
+      "бологовский"
+    ]
+  },
+  {
+    "name": "Весьегонск",
+    "region": "RU-TVER",
+    "lat": 58.65,
+    "lon": 37.26667,
+    "kind": "settlement",
+    "aliases": [
+      "весьегонский"
+    ]
+  },
+  {
+    "name": "Вышний Волочёк",
+    "region": "RU-TVER",
+    "lat": 57.58333,
+    "lon": 34.56667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Западная Двина",
+    "region": "RU-TVER",
+    "lat": 56.26667,
+    "lon": 32.08333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Зубцов",
+    "region": "RU-TVER",
+    "lat": 56.16667,
+    "lon": 34.58333,
+    "kind": "settlement",
+    "aliases": [
+      "зубцовский"
+    ]
+  },
+  {
+    "name": "Калязин",
+    "region": "RU-TVER",
+    "lat": 57.23333,
+    "lon": 37.85,
+    "kind": "settlement",
+    "aliases": [
+      "калязинский"
+    ]
+  },
+  {
+    "name": "Кашин",
+    "region": "RU-TVER",
+    "lat": 57.35,
+    "lon": 37.61667,
+    "kind": "settlement",
+    "aliases": [
+      "кашинский"
+    ]
+  },
+  {
+    "name": "Кимры",
+    "region": "RU-TVER",
+    "lat": 56.86667,
+    "lon": 37.35,
+    "kind": "city",
+    "aliases": [
+      "кимрский"
+    ]
+  },
+  {
+    "name": "Конаково",
+    "region": "RU-TVER",
+    "lat": 56.7,
+    "lon": 36.76667,
+    "kind": "city",
+    "aliases": [
+      "конаковский"
+    ]
+  },
+  {
+    "name": "Красный Холм",
+    "region": "RU-TVER",
+    "lat": 58.06329,
+    "lon": 37.12298,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Кувшиново",
+    "region": "RU-TVER",
+    "lat": 57.03333,
+    "lon": 34.16667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Лихославль",
+    "region": "RU-TVER",
+    "lat": 57.11667,
+    "lon": 35.46667,
+    "kind": "settlement",
+    "aliases": [
+      "лихославльский"
+    ]
+  },
+  {
+    "name": "Нелидово",
+    "region": "RU-TVER",
+    "lat": 56.21667,
+    "lon": 32.78333,
+    "kind": "settlement",
+    "aliases": [
+      "нелидовский"
+    ]
+  },
+  {
+    "name": "Осташков",
+    "region": "RU-TVER",
+    "lat": 57.15,
+    "lon": 33.1,
+    "kind": "settlement",
+    "aliases": [
+      "осташковский"
+    ]
+  },
+  {
+    "name": "Ржев",
+    "region": "RU-TVER",
+    "lat": 56.26556,
+    "lon": 34.3275,
+    "kind": "city",
+    "aliases": [
+      "ржевский"
+    ]
+  },
+  {
+    "name": "Старица",
+    "region": "RU-TVER",
+    "lat": 56.51667,
+    "lon": 34.93333,
+    "kind": "settlement",
+    "aliases": [
+      "старицкий"
+    ]
+  },
+  {
+    "name": "Тверь",
+    "region": "RU-TVER",
+    "lat": 56.85783,
+    "lon": 35.92193,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Торжок",
+    "region": "RU-TVER",
+    "lat": 57.03333,
+    "lon": 34.96667,
+    "kind": "city",
+    "aliases": [
+      "торжокский"
+    ]
+  },
+  {
+    "name": "Торопец",
+    "region": "RU-TVER",
+    "lat": 56.5,
+    "lon": 31.63333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Удомля",
+    "region": "RU-TVER",
+    "lat": 57.88333,
+    "lon": 35.01667,
+    "kind": "city",
+    "aliases": [
+      "удомельский"
+    ]
+  },
+  {
+    "name": "Барыш",
+    "region": "RU-ULYANOVSK",
+    "lat": 53.65,
+    "lon": 47.11667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Димитровград",
+    "region": "RU-ULYANOVSK",
+    "lat": 54.23333,
+    "lon": 49.58333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Инза",
+    "region": "RU-ULYANOVSK",
+    "lat": 53.85,
+    "lon": 46.35,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Новоульяновск",
+    "region": "RU-ULYANOVSK",
+    "lat": 54.15,
+    "lon": 48.38333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Сенгилей",
+    "region": "RU-ULYANOVSK",
+    "lat": 53.96667,
+    "lon": 48.8,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Ульяновск",
+    "region": "RU-ULYANOVSK",
+    "lat": 54.31667,
+    "lon": 48.36667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Волгоград",
+    "region": "RU-VOLGOGRAD",
+    "lat": 48.71167,
+    "lon": 44.51389,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Волжский",
+    "region": "RU-VOLGOGRAD",
+    "lat": 48.78333,
+    "lon": 44.76667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Дубовка",
+    "region": "RU-VOLGOGRAD",
+    "lat": 49.05,
+    "lon": 44.83333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Жирновск",
+    "region": "RU-VOLGOGRAD",
+    "lat": 50.98028,
+    "lon": 44.78083,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Калач-на-Дону",
+    "region": "RU-VOLGOGRAD",
+    "lat": 48.68333,
+    "lon": 43.53333,
+    "kind": "city",
+    "aliases": [
+      "калачевский"
+    ]
+  },
+  {
+    "name": "Камышин",
+    "region": "RU-VOLGOGRAD",
+    "lat": 50.08333,
+    "lon": 45.4,
+    "kind": "city",
+    "aliases": [
+      "камышинский"
+    ]
+  },
+  {
+    "name": "Котельниково",
+    "region": "RU-VOLGOGRAD",
+    "lat": 47.63333,
+    "lon": 43.13333,
+    "kind": "city",
+    "aliases": [
+      "котельниковский"
+    ]
+  },
+  {
+    "name": "Котово",
+    "region": "RU-VOLGOGRAD",
+    "lat": 50.31667,
+    "lon": 44.8,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Краснослободск",
+    "region": "RU-VOLGOGRAD",
+    "lat": 48.7,
+    "lon": 44.56667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Ленинск",
+    "region": "RU-VOLGOGRAD",
+    "lat": 48.7,
+    "lon": 45.2,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Михайловка",
+    "region": "RU-VOLGOGRAD",
+    "lat": 50.06667,
+    "lon": 43.23333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Николаевск",
+    "region": "RU-VOLGOGRAD",
+    "lat": 50.02722,
+    "lon": 45.46306,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Новоаннинский",
+    "region": "RU-VOLGOGRAD",
+    "lat": 50.51667,
+    "lon": 42.66667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Палласовка",
+    "region": "RU-VOLGOGRAD",
+    "lat": 50.05,
+    "lon": 46.88333,
+    "kind": "settlement",
+    "aliases": [
+      "палласовский"
+    ]
+  },
+  {
+    "name": "Петров Вал",
+    "region": "RU-VOLGOGRAD",
+    "lat": 50.13333,
+    "lon": 45.21667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Серафимович",
+    "region": "RU-VOLGOGRAD",
+    "lat": 49.58333,
+    "lon": 42.73333,
+    "kind": "settlement",
+    "aliases": [
+      "серафимовичский"
+    ]
+  },
+  {
+    "name": "Суровикино",
+    "region": "RU-VOLGOGRAD",
+    "lat": 48.6,
+    "lon": 42.85,
+    "kind": "settlement",
+    "aliases": [
+      "суровикинский"
+    ]
+  },
+  {
+    "name": "Урюпинск",
+    "region": "RU-VOLGOGRAD",
+    "lat": 50.8,
+    "lon": 42.01667,
+    "kind": "city",
+    "aliases": [
+      "урюпинский"
+    ]
+  },
+  {
+    "name": "Фролово",
+    "region": "RU-VOLGOGRAD",
+    "lat": 49.76667,
+    "lon": 43.65,
+    "kind": "city",
+    "aliases": [
+      "фроловский"
+    ]
+  },
+  {
+    "name": "Бобров",
+    "region": "RU-VORONEZH",
+    "lat": 51.09444,
+    "lon": 40.03222,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Богучар",
+    "region": "RU-VORONEZH",
+    "lat": 49.93333,
+    "lon": 40.55,
+    "kind": "settlement",
+    "aliases": [
+      "богучарский"
+    ]
+  },
+  {
+    "name": "Борисоглебск",
+    "region": "RU-VORONEZH",
+    "lat": 51.36667,
+    "lon": 42.08333,
+    "kind": "city",
+    "aliases": [
+      "борисоглебский"
+    ]
+  },
+  {
+    "name": "Бутурлиновка",
+    "region": "RU-VORONEZH",
+    "lat": 50.825,
+    "lon": 40.58889,
+    "kind": "city",
+    "aliases": [
+      "бутурлиновский"
+    ]
+  },
+  {
+    "name": "Воронеж",
+    "region": "RU-VORONEZH",
+    "lat": 51.67167,
+    "lon": 39.21056,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Калач",
+    "region": "RU-VORONEZH",
+    "lat": 50.42583,
+    "lon": 41.01556,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Лиски",
+    "region": "RU-VORONEZH",
+    "lat": 50.98222,
+    "lon": 39.49944,
+    "kind": "city",
+    "aliases": [
+      "лискинский"
+    ]
+  },
+  {
+    "name": "Нововоронеж",
+    "region": "RU-VORONEZH",
+    "lat": 51.31667,
+    "lon": 39.21667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Новохопёрск",
+    "region": "RU-VORONEZH",
+    "lat": 51.1,
+    "lon": 41.61667,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Острогожск",
+    "region": "RU-VORONEZH",
+    "lat": 50.86667,
+    "lon": 39.06667,
+    "kind": "city",
+    "aliases": [
+      "острогожский"
+    ]
+  },
+  {
+    "name": "Павловск",
+    "region": "RU-VORONEZH",
+    "lat": 50.45,
+    "lon": 40.06667,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Поворино",
+    "region": "RU-VORONEZH",
+    "lat": 51.2,
+    "lon": 42.25,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Россошь",
+    "region": "RU-VORONEZH",
+    "lat": 50.2,
+    "lon": 39.58333,
+    "kind": "city",
+    "aliases": [
+      "россошанский"
+    ]
+  },
+  {
+    "name": "Семилуки",
+    "region": "RU-VORONEZH",
+    "lat": 51.68333,
+    "lon": 39.03333,
+    "kind": "city",
+    "aliases": []
+  },
+  {
+    "name": "Эртиль",
+    "region": "RU-VORONEZH",
+    "lat": 51.83333,
+    "lon": 40.8,
+    "kind": "settlement",
+    "aliases": [
+      "эртильский"
+    ]
+  },
+  {
+    "name": "Акимовка",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 46.5667,
+    "lon": 35.0333,
+    "kind": "settlement",
+    "aliases": [
+      "акимовский"
+    ]
+  },
+  {
+    "name": "Белозерка",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 46.6167,
+    "lon": 35.4333,
+    "kind": "settlement",
+    "aliases": [
+      "белозерский запорожский"
+    ]
+  },
+  {
+    "name": "Бердянск",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 46.7554,
+    "lon": 36.7886,
+    "kind": "city",
+    "aliases": [
+      "бердянский"
+    ]
+  },
+  {
+    "name": "Бильмак",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 47.4667,
+    "lon": 36.5333,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Васильевка",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 47.4333,
+    "lon": 35.2833,
+    "kind": "city",
+    "aliases": [
+      "васильевский"
+    ]
+  },
+  {
+    "name": "Веселое",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 47.0167,
+    "lon": 34.9167,
+    "kind": "settlement",
+    "aliases": [
+      "веселовский"
+    ]
+  },
+  {
+    "name": "Гуляйполе",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 47.65,
+    "lon": 36.2667,
+    "kind": "city",
+    "aliases": [
+      "гуляйпольский"
+    ]
+  },
+  {
+    "name": "Днепрорудное",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 47.3833,
+    "lon": 34.9833,
+    "kind": "city",
+    "aliases": [
+      "днепрорудненский"
+    ]
+  },
+  {
+    "name": "Запорожье",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 47.8388,
+    "lon": 35.1396,
+    "kind": "city",
+    "aliases": [
+      "запорожский город"
+    ]
+  },
+  {
+    "name": "Каменка-Днепровская",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 47.4833,
+    "lon": 34.4167,
+    "kind": "city",
+    "aliases": [
+      "каменско-днепровский"
+    ]
+  },
+  {
+    "name": "Мелитополь",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 46.8383,
+    "lon": 35.3667,
+    "kind": "city",
+    "aliases": [
+      "мелитопольский"
+    ]
+  },
+  {
+    "name": "Михайловка",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 47.2667,
+    "lon": 35.2167,
+    "kind": "settlement",
+    "aliases": [
+      "михайловский запорожский"
+    ]
+  },
+  {
+    "name": "Орехов",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 47.5667,
+    "lon": 35.7833,
+    "kind": "city",
+    "aliases": [
+      "ореховский"
+    ]
+  },
+  {
+    "name": "Пологи",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 47.4833,
+    "lon": 36.25,
+    "kind": "city",
+    "aliases": [
+      "пологовский"
+    ]
+  },
+  {
+    "name": "Приморск",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 46.7333,
+    "lon": 36.3333,
+    "kind": "city",
+    "aliases": [
+      "приморский запорожский"
+    ]
+  },
+  {
+    "name": "Токмак",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 47.25,
+    "lon": 35.7167,
+    "kind": "city",
+    "aliases": [
+      "токмакский"
+    ]
+  },
+  {
+    "name": "Черниговка",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 47.1833,
+    "lon": 36.25,
+    "kind": "settlement",
+    "aliases": []
+  },
+  {
+    "name": "Энергодар",
+    "region": "RU-ZAPORIZHIA",
+    "lat": 47.4989,
+    "lon": 34.6556,
+    "kind": "city",
+    "aliases": [
+      "энергодарский"
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Данные и секреты
+.env
+.env.*
+!.env.example
+backend/data/
+*.session
+*.session-journal
+*.db
+*.db.*
+*.sqlite3
+
+# Логи
+logs/
+*.log
+
+# Frontend
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

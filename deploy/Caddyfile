@@ -1,0 +1,5 @@
+# Замените домен на свой. Caddy сам выпустит сертификат Let's Encrypt.
+radar.example.ru {
+    encode gzip
+    reverse_proxy frontend:80
+}

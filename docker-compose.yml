@@ -1,0 +1,116 @@
+name: drone-alert-radar
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: radar
+      POSTGRES_PASSWORD: radar
+      POSTGRES_DB: radar
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U radar -d radar"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+    restart: unless-stopped
+
+  api:
+    build: ./backend
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://radar:radar@postgres:5432/radar
+      NOTIFY_SCHEDULER_ENABLED: "false"
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  notifier:
+    build: ./backend
+    command: python -m app.workers.notifier
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://radar:radar@postgres:5432/radar
+      NOTIFY_SCHEDULER_ENABLED: "false"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    profiles: ["notify"]
+    restart: unless-stopped
+
+  telegram:
+    build: ./backend
+    command: python -m app.ingestion.telegram_listener
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://radar:radar@postgres:5432/radar
+      TELEGRAM_SESSION: /app/data/radar
+    volumes:
+      - ./backend/data:/app/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+    profiles: ["telegram"]
+    restart: unless-stopped
+
+  # Основной режим: разовый опрос каналов каждые 5 минут.
+  # В отличие от live-listener не держит соединение постоянно.
+  poller:
+    build: ./backend
+    command: ["sh", "-c", "while true; do python scripts/poll_sources.py; sleep 300; done"]
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://radar:radar@postgres:5432/radar
+      TELEGRAM_SESSION: /app/data/radar
+    volumes:
+      - ./backend/data:/app/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  rss:
+    build: ./backend
+    command: python -m app.ingestion.rss_listener
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://radar:radar@postgres:5432/radar
+    depends_on:
+      postgres:
+        condition: service_healthy
+    profiles: ["rss"]
+    restart: unless-stopped
+
+  demo:
+    build: ./backend
+    command: python -m app.ingestion.demo --once
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://radar:radar@postgres:5432/radar
+    depends_on:
+      postgres:
+        condition: service_healthy
+    profiles: ["demo"]
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  pgdata:
