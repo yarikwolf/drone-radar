@@ -8,7 +8,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import alerts, regions, system
+from app.api import alerts, internal, regions, system
 from app.config import settings
 from app.db import SessionLocal, engine, init_db
 from app.seed import seed_regions
@@ -65,6 +65,7 @@ app.add_middleware(
 app.include_router(alerts.router, prefix="/api")
 app.include_router(regions.router, prefix="/api")
 app.include_router(system.router, prefix="/api")
+app.include_router(internal.router, prefix="/api")
 
 
 @app.get("/", tags=["system"], summary="Корень API")

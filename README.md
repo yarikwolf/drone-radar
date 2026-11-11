@@ -235,6 +235,8 @@ docker compose --profile notify up -d notifier
 ```
 
 Публикация на сервере, домен и HTTPS: см. [`deploy/DEPLOY.md`](deploy/DEPLOY.md).
+Бесплатный вариант на Vercel (frontend + FastAPI + Neon + внешний cron):
+см. [`deploy/VERCEL.md`](deploy/VERCEL.md).
 
 ### Локальная разработка
 
@@ -357,6 +359,7 @@ Webhook закрыт токеном `INGEST_TOKEN`; если токен не з�
 | GET | `/api/health` | health + наличие БД |
 | WS | `/api/ws/alerts` | push новых событий |
 | POST | `/api/ingest/webhook` | приём текста из внешнего источника |
+| POST | `/api/internal/poll` | один цикл опроса по расписанию (нужен `X-Poll-Token`) |
 
 Примеры:
 

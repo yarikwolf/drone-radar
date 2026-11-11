@@ -66,6 +66,16 @@ class Settings(BaseSettings):
     # --- Приём из внешних API ---
     ingest_token: str = ""
 
+    # --- Serverless (Vercel и похожие платформы) ---
+    # SERVERLESS=true отключает пул соединений с БД и WebSocket-ожидания.
+    serverless: bool = False
+    # Токен для внешнего планировщика: POST /api/internal/poll с X-Poll-Token.
+    poll_token: str = ""
+    # Сколько максимум может длиться один опрос (Vercel Hobby: не больше 300 c).
+    poll_max_seconds: int = 240
+    # WebSocket не нужен: фронтенд и так опрашивает API каждые 15 секунд.
+    ws_enabled: bool = True
+
     @field_validator("telegram_api_id", mode="before")
     @classmethod
     def _empty_api_id(cls, value: object) -> object:

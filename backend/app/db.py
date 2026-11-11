@@ -8,6 +8,7 @@ from collections.abc import AsyncIterator
 from sqlalchemy import inspect, text
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 from sqlalchemy.orm import DeclarativeBase
+from sqlalchemy.pool import NullPool
 
 from app.config import settings
 
@@ -19,10 +20,24 @@ class Base(DeclarativeBase):
 
 
 def _engine_kwargs(url: str) -> dict:
-    """Параметры пула: SQLite не поддерживает pool_size/max_overflow."""
+    """Параметры пула: SQLite не поддерживает pool_size/max_overflow.
+
+    В serverless каждый вызов функции живёт отдельно, поэтому держать пул
+    соединений нельзя: он утекает вместе с остановленным инстансом.
+    NullPool открывает соединение на запрос, а statement_cache_size=0 нужен
+    для PgBouncer в transaction-режиме (Neon pooler).
+    """
     if url.startswith("sqlite"):
         # timeout — ждать освобождения блокировки, пока воркер пишет данные.
         return {"connect_args": {"check_same_thread": False, "timeout": 30}}
+
+    if settings.serverless or "-pooler" in url:
+        return {
+            "pool_pre_ping": True,
+            "poolclass": NullPool,
+            "connect_args": {"statement_cache_size": 0, "timeout": 15},
+        }
+
     return {"pool_pre_ping": True, "pool_size": 10, "max_overflow": 20}
 
 

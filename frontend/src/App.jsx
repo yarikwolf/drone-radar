@@ -90,6 +90,9 @@ export default function App() {
 
   // WebSocket с exponential backoff.
   useEffect(() => {
+    // На Vercel WebSocket не нужен: работает опрос API каждые 15 секунд.
+    if (import.meta.env.VITE_DISABLE_WS === "1") return undefined;
+
     let socket = null;
     let stopped = false;
     let retry = 3000;

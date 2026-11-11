@@ -1,0 +1,18 @@
+# Файлы, которые не нужны функции на Vercel.
+# Важно: слэш в начале — только корень backend, иначе пострадает app/data.
+/data/
+/logs/
+/tests/
+/sql/
+/.venv/
+/__pycache__/
+/.pytest_cache/
+
+*.db
+*.db.*
+*.session
+*.session-journal
+*.log
+pyproject.toml
+pytest.ini
+requirements-dev.txt

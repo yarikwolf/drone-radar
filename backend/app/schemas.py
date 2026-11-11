@@ -85,6 +85,15 @@ class HealthOut(BaseModel):
     version: str
 
 
+class PollOut(BaseModel):
+    """Сводка одного цикла опроса источников."""
+
+    ok: bool
+    stored: int
+    skipped: bool = False
+    elapsed_seconds: float
+
+
 class WebhookIn(BaseModel):
     text: str = Field(min_length=3, max_length=4000)
     source: str = Field(default="webhook", max_length=120)

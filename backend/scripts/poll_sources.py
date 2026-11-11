@@ -18,7 +18,7 @@ from pathlib import Path
 # поэтому добавляем корень backend в путь импорта.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from app.ingestion.telegram_listener import poll_once
+from app.services.poller import run_poll
 
 logging.basicConfig(
     level=logging.INFO,
@@ -29,7 +29,7 @@ logger = logging.getLogger("poll_sources")
 
 def main() -> int:
     try:
-        stored = asyncio.run(poll_once())
+        result = asyncio.run(run_poll())
     except KeyboardInterrupt:
         logger.info("Остановлено пользователем")
         return 130
@@ -37,7 +37,11 @@ def main() -> int:
         logger.exception("Проверка источников не удалась")
         return 1
 
-    logger.info("Готово: обработано сообщений %s", stored)
+    if result.get("skipped"):
+        logger.info("Готово: предыдущий опрос ещё выполняется, запуск пропущен")
+        return 0
+
+    logger.info("Готово: обработано сообщений %s", result.get("stored", 0))
     return 0
 
 

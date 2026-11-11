@@ -108,6 +108,10 @@ async def ingest_webhook(
 @router.websocket("/ws/alerts")
 async def alerts_websocket(websocket: WebSocket) -> None:
     """Push-канал: клиент перезапрашивает /api/alerts при каждом событии."""
+    if not settings.ws_enabled:
+        await websocket.close(code=1008)
+        return
+
     await broadcaster.connect(websocket)
     try:
         await websocket.send_json(

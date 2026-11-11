@@ -1,0 +1,38 @@
+name: Poll sources
+
+# Vercel Hobby не умеет запускать cron чаще раза в сутки,
+# поэтому опрос Telegram выполняет GitHub Actions каждые 5 минут.
+#
+# Нужны настройки репозитория (Settings → Secrets and variables → Actions):
+#   var    API_BASE_URL  = https://<api-проект>.vercel.app
+#   secret POLL_TOKEN    = тот же токен, что в переменных Vercel
+#
+# GitHub может задерживать запуск по расписанию на 5–15 минут в часы пик,
+# а после 60 дней без активности репозитория расписание отключается.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: poll-sources
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Проверка настроек
+        env:
+          API_BASE_URL: ${{ vars.API_BASE_URL }}
+          POLL_TOKEN: ${{ secrets.POLL_TOKEN }}
+        run: |
+          if [ -z "$API_BASE_URL" ] || [ -z "$POLL_TOKEN" ]; then
+            echo "Не заданы vars.API_BASE_URL или secrets.POLL_TOKEN — опрос пропущен"
+            exit 0
+          fi
+          curl -fsS -X POST "${API_BASE_URL%/}/api/internal/poll" \
+            -H "X-Poll-Token: $POLL_TOKEN" \
+            --max-time 280
