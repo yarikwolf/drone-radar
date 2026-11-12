@@ -3,53 +3,72 @@
 Схема:
 
 ```
-GitHub (код) ──► Vercel: frontend  ──►  https://drone-radar.vercel.app
+GitHub (код) ──► Vercel: frontend  ──►  https://drone-radar-one.vercel.app
                         │  /api
                         ▼
-                 Vercel: backend (FastAPI)  ──►  Neon PostgreSQL
-                        ▲
+                 Vercel: backend (FastAPI)  ──►  Supabase PostgreSQL
+                        ▲                        (eu-west-1, pooler)
                         │ POST /api/internal/poll (X-Poll-Token)
                  GitHub Actions, каждые 5 минут
 ```
+
+Текущий рабочий деплой:
+
+| Что | Адрес |
+|---|---|
+| Сайт | <https://drone-radar-one.vercel.app> |
+| API | <https://drone-radar-api.vercel.app> (`/api/health`, `/docs`) |
+| База | Supabase `drone-radar`, проект `dckoxkmeykjokmvuitlc`, регион `eu-west-1` |
 
 Что важно знать заранее:
 
 - **cron на Hobby работает только раз в сутки**, поэтому опрос Telegram
   запускает GitHub Actions (бесплатно для публичного репозитория);
-- **базы данных в Vercel нет**, нужен внешний PostgreSQL — используем Neon (free);
-- **WebSocket** на Vercel в бете и нам не нужен: фронтенд опрашивает API каждые 15 секунд;
+- **базы данных в Vercel нет**, нужен внешний PostgreSQL — используем **Supabase**
+  (Neon недоступен из РФ: отдаёт `403 Access Blocked in Your Region`);
+- **WebSocket** на Vercel нам не нужен: фронтенд опрашивает API каждые 15 секунд
+  (`WS_ENABLED=false`, `VITE_DISABLE_WS=1`);
 - **Hobby — для некоммерческих проектов**; публичный бесплатный радар подходит;
-- у функций лимит **300 секунд**, холодный старт 2–10 секунд, логи хранятся 1 час.
+- у функций лимит **300 секунд**, холодный старт 2–10 секунд, логи хранятся 1 час;
+- **`git push` сам по себе сайт не обновляет**: Git-интеграция Vercel не
+  подключена, деплой идёт скриптом [`vercel_deploy.py`](vercel_deploy.py)
+  (см. раздел 8).
 
-Понадобятся аккаунты: Vercel (вход через GitHub), Neon. Всё остальное уже есть
-в репозитории.
+Понадобятся аккаунты: Vercel и Supabase. Всё остальное уже есть в репозитории.
 
 ---
 
-## 1. База данных: Neon
+## 1. База данных: Supabase
 
-1. Зарегистрируйтесь на <https://neon.com> через GitHub.
-2. **Create project**:
+1. <https://supabase.com/dashboard> → **New project**:
    - имя: `drone-radar`;
-   - регион: **Frankfurt (eu-central-1)** — ближе к Vercel `fra1` и к Telegram;
-   - версия PostgreSQL — по умолчанию.
-3. На странице проекта нажмите **Connect** и скопируйте строку подключения
-   с пометкой **Pooled connection** (в имени хоста есть `-pooler`).
-4. Приведите строку к виду, понятному SQLAlchemy:
+   - регион: **West EU (Ireland) `eu-west-1`** (Frankfurt на free-тарифе
+     недоступен, а Ирландия ближе к серверам Vercel и к Telegram);
+   - пароль базы: сгенерировать и сохранить;
+   - план: **Free**.
+2. Строка подключения берётся в **Project Settings → Database → Connection
+   pooling → Connection string**. Для serverless нужен **transaction pooler**:
 
 ```dotenv
-DATABASE_URL=postgresql+asyncpg://USER:PASSWORD@ep-xxx-pooler.eu-central-1.aws.neon.tech/neondb?ssl=require
+DATABASE_URL=postgresql+asyncpg://postgres.<REF>:<ПАРОЛЬ>@aws-0-eu-west-1.pooler.supabase.com:6543/postgres?ssl=require
 ```
 
 Замены:
 
-| Neon отдаёт | Нужно в проекте |
+| Supabase отдаёт | Нужно в проекте |
 |---|---|
 | `postgresql://` | `postgresql+asyncpg://` |
+| пользователь `postgres` | `postgres.<REF>` (REF — идентификатор проекта) |
 | `?sslmode=require` | `?ssl=require` |
-| `channel_binding=require` | удалить параметр |
 
-Проверить строку можно локально:
+Если при первом запросе в логах `tenant/user ... not found`, значит у проекта
+другой пулер — замените `aws-0` на `aws-1` в имени хоста (оба варианта
+существуют, верный определяется экспериментом).
+
+> Прямое подключение `db.<REF>.supabase.co` доступно только по IPv6 — не
+> используйте его на Vercel.
+
+Проверить строку можно локально (нужен доступ к порту 6543):
 
 ```powershell
 cd backend
@@ -58,16 +77,17 @@ $env:DATABASE_URL="postgresql+asyncpg://..."
 python -c "import asyncio; from app.db import init_db; asyncio.run(init_db()); print('ok')"
 ```
 
-> Бесплатный Neon засыпает после ~5 минут простоя. Первый запрос после паузы
-> будет на 1–2 секунды дольше — это нормально.
+> В РФ соединение с Supabase часто режется VPN/DPI (TCP открыт, а PostgreSQL
+> молчит). В этом случае проверяйте уже после деплоя — через `/api/health`.
+
+Таблицы создаются сами при первом запросе (`AUTO_CREATE_TABLES=true`), там же
+засеиваются 89 регионов.
 
 ---
 
 ## 2. Строка сессии Telegram
 
 На Vercel нельзя хранить файл `radar.session`, зато можно передать строку.
-Она уже есть в вашей локальной сессии — экспортируйте её (локальный радар
-можно не выключать):
 
 ```powershell
 cd "C:\Users\Valya\Documents\Проект по умолчанию\drone-radar\backend"
@@ -75,46 +95,60 @@ cd "C:\Users\Valya\Documents\Проект по умолчанию\drone-radar\ba
 python scripts/session_to_string.py
 ```
 
-Скрипт напечатает:
-
-```
-TELEGRAM_SESSION_STRING:
-1BVtsOK4...
-```
-
-Скопируйте **всю строку**. Это фактически пароль от аккаунта: не коммитьте её и
-не вставляйте в переписку. Если сессия когда-нибудь отзовётся — повторите
+Скрипт напечатает строку `1BVtsOK4...`. Это фактически пароль от аккаунта:
+не коммитьте её и не вставляйте в переписку. Если сессия отзовётся — повторите
 `python scripts/telegram_login.py`, затем экспорт ещё раз.
 
 ---
 
-## 3. Проект API на Vercel
+## 3. Токен Vercel и проекты
 
-1. Откройте <https://vercel.com/new> и войдите через GitHub.
-2. **Import Git Repository** → выберите `yarikwolf/drone-radar`.
-3. Настройки проекта:
-   - **Project Name**: `drone-radar-api`;
-   - **Framework Preset**: `FastAPI` (если не определился — оставьте `Other`);
-   - **Root Directory**: нажмите `Edit` и выберите **`backend`**;
-   - Build & Output Settings не меняйте.
-4. **Environment Variables** — добавьте для Production (и Preview, если нужно):
+Токен нужен, если деплой идёт через API (раздел 8):
+
+1. <https://vercel.com/account/settings/tokens> → **Create Token**:
+   - имя: `drone-radar-deploy`;
+   - scope: **Full Account**;
+   - срок: 1 год.
+2. Токен показывается один раз. Сохраните его вне репозитория:
+
+```powershell
+Set-Content "$env:USERPROFILE\.vercel-token" "vcp_..." -Encoding ASCII -NoNewline
+```
+
+Проекты:
+
+```powershell
+python deploy/vercel_deploy.py create-project drone-radar-api fastapi
+python deploy/vercel_deploy.py create-project drone-radar
+```
+
+---
+
+## 4. Переменные API
+
+Файл `api.env.json` (в репозиторий не кладём!) и загрузка:
+
+```powershell
+python deploy/vercel_deploy.py env drone-radar-api api.env.json
+```
 
 | Переменная | Значение |
 |---|---|
 | `DATABASE_URL` | строка из шага 1 |
+| `ENVIRONMENT` | `production` |
 | `SERVERLESS` | `true` |
+| `WS_ENABLED` | `false` |
+| `AUTO_CREATE_TABLES` | `true` |
+| `CORS_ORIGINS` | `https://drone-radar-one.vercel.app,http://localhost:5173` |
 | `POLL_TOKEN` | длинный случайный токен (см. ниже) |
 | `POLL_MAX_SECONDS` | `240` |
+| `NOTIFY_ENABLED` | `false` |
+| `NOTIFY_SCHEDULER_ENABLED` | `false` (на serverless планировщика нет) |
 | `TELEGRAM_API_ID` | из локального `.env` |
 | `TELEGRAM_API_HASH` | из локального `.env` |
 | `TELEGRAM_SESSION_STRING` | строка из шага 2 |
 | `TELEGRAM_CHANNELS` | `https://t.me/radar_krasdar,https://t.me/lpr1_treugolnik,https://t.me/kubtrevoga93,https://t.me/russiamonitoring_radar_bpla,https://t.me/trevogi_rus` |
 | `TELEGRAM_BACKFILL_LIMIT` | `20` |
-| `WS_ENABLED` | `false` |
-| `NOTIFY_SCHEDULER_ENABLED` | `false` |
-| `AUTO_CREATE_TABLES` | `true` |
-| `ENVIRONMENT` | `production` |
-| `CORS_ORIGINS` | пока `http://localhost:5173`, обновим после шага 4 |
 
 Сгенерировать `POLL_TOKEN`:
 
@@ -122,23 +156,37 @@ TELEGRAM_SESSION_STRING:
 python -c "import secrets; print(secrets.token_urlsafe(32))"
 ```
 
-5. **Deploy**. Первая сборка ставит Python-зависимости, это 2–5 минут.
-6. Проверьте:
+---
+
+## 5. Деплой API
+
+```powershell
+python deploy/vercel_deploy.py deploy drone-radar-api backend
+```
+
+Vercel сам определяет FastAPI по `app/main.py`, ставит зависимости из
+`requirements.txt`, а `backend/vercel.json` задаёт лимит 300 секунд.
+
+Проверка:
 
 ```powershell
 curl https://drone-radar-api.vercel.app/api/health
 # {"status":"ok","database":"ok","version":"1.0.0"}
+
+curl https://drone-radar-api.vercel.app/api/regions
+# {"total":89,...}
 ```
 
-Если `database":"error"` — проверьте `DATABASE_URL` (частая ошибка: остался
-`postgresql://` вместо `postgresql+asyncpg://` или `sslmode` вместо `ssl`).
+Если `database: error` — смотрите `DATABASE_URL` (частые ошибки: остался
+`postgresql://` вместо `postgresql+asyncpg://`, нет `?ssl=require`, неверный
+хост пулера).
 
-7. Ручной запуск опроса (подставьте свой токен):
+Ручной запуск опроса:
 
 ```powershell
 curl -X POST "https://drone-radar-api.vercel.app/api/internal/poll" `
   -H "X-Poll-Token: ВАШ_ТОКЕН"
-# {"ok":true,"stored":12,"skipped":false,"elapsed_seconds":18.4}
+# {"ok":true,"stored":50,"skipped":false,"elapsed_seconds":114.97}
 ```
 
 > Первый вызов после деплоя может занять 20–40 секунд: создаются таблицы,
@@ -146,40 +194,37 @@ curl -X POST "https://drone-radar-api.vercel.app/api/internal/poll" `
 
 ---
 
-## 4. Проект фронтенда на Vercel
+## 6. Деплой фронтенда
 
-1. Снова <https://vercel.com/new> → тот же репозиторий.
-2. Настройки:
-   - **Project Name**: `drone-radar`;
-   - **Framework Preset**: `Vite` (определится сам);
-   - **Root Directory**: **`frontend`**;
-   - Build Command: `npm run build`, Output Directory: `dist` (по умолчанию).
-3. **Environment Variables** (Production):
+Адрес API «запекается» в бандл на этапе сборки, поэтому сначала собираем
+локально с нужными переменными:
 
-| Переменная | Значение |
-|---|---|
-| `VITE_API_URL` | `https://drone-radar-api.vercel.app` |
-| `VITE_DISABLE_WS` | `1` |
-
-4. **Deploy**. Получите адрес вида `https://drone-radar.vercel.app`.
-5. Вернитесь в проект **drone-radar-api** → Settings → Environment Variables →
-   измените `CORS_ORIGINS`:
-
-```dotenv
-CORS_ORIGINS=https://drone-radar.vercel.app
+```powershell
+cd frontend
+$env:VITE_API_URL="https://drone-radar-api.vercel.app"
+$env:VITE_DISABLE_WS="1"
+npm run build
+cd ..
+python deploy/vercel_deploy.py deploy drone-radar frontend/dist --all
 ```
 
-Сохраните и сделайте **Redeploy** (Deployments → ⋯ → Redeploy), чтобы новый
-CORS применился.
+Флаг `--all` обязателен: без него каталог `dist/data` (GeoJSON с границами
+регионов) будет пропущен как служебный.
 
-6. Откройте сайт. Должны появиться карта, регионы и лента событий.
+Затем пропишите `VITE_API_URL` и `VITE_DISABLE_WS=1` в переменные проекта
+`drone-radar` — они пригодятся, если проект когда-нибудь будет собираться на
+стороне Vercel:
+
+```powershell
+python deploy/vercel_deploy.py env drone-radar web.env.json
+```
 
 > Домены Preview (`drone-radar-xxx.vercel.app`) в CORS не входят — проверяйте
 > продовый адрес. Если нужны превью, добавьте их через запятую.
 
 ---
 
-## 5. Планировщик: опрос каждые 5 минут
+## 7. Планировщик: опрос каждые 5 минут
 
 ### Вариант A: GitHub Actions (уже в репозитории)
 
@@ -191,7 +236,6 @@ CORS применился.
 3. Вкладка **Secrets** → **New repository secret**:
    - `POLL_TOKEN` = тот же токен, что в Vercel.
 4. **Actions → Poll sources → Run workflow** — проверить вручную.
-5. Через 10 минут в Actions появится запуск по расписанию.
 
 Ограничения GitHub: расписание может задерживаться на 5–15 минут, а после
 60 дней без активности репозитория GitHub отключает cron (достаточно зайти и
@@ -199,21 +243,45 @@ CORS применился.
 
 ### Вариант B: cron-job.org
 
-Бесплатный внешний планировщик с точным интервалом:
-
 1. <https://cron-job.org> → регистрация → **Create cronjob**.
 2. URL: `https://drone-radar-api.vercel.app/api/internal/poll`
 3. Schedule: **every 5 minutes**.
 4. Advanced → Request method: **POST**; Headers:
    `X-Poll-Token: ВАШ_ТОКЕН`.
-5. Включите уведомления о падениях на почту.
 
 Достаточно одного планировщика: если работают оба, второй запуск просто
 пропускается благодаря блокировке (`"skipped": true`).
 
 ---
 
-## 6. Проверка после деплоя
+## 8. Обновление сайта
+
+Git-интеграция Vercel не подключена (GitHub App не установлен), поэтому
+`git push` обновляет только код. Чтобы выложить изменения:
+
+```powershell
+cd "C:\Users\Valya\Documents\Проект по умолчанию\drone-radar"
+git add -A
+git commit -m "что изменилось"
+git push
+
+# бэкенд
+python deploy/vercel_deploy.py deploy drone-radar-api backend
+
+# фронтенд (после npm run build с VITE_API_URL и VITE_DISABLE_WS=1)
+python deploy/vercel_deploy.py deploy drone-radar frontend/dist --all
+```
+
+Меняли переменные окружения — после `env` нужен новый деплой, иначе значения
+не применятся.
+
+Если позже подключите Git-интеграцию (Vercel → **Add Git Repository**, root
+`backend` и `frontend`), деплой станет автоматическим: Vercel будет собирать
+проекты на каждый пуш, а `vercel.json` уже лежит в репозитории.
+
+---
+
+## 9. Проверка после деплоя
 
 | Что проверить | Как | Ожидание |
 |---|---|---|
@@ -222,41 +290,31 @@ CORS применился.
 | Опрос работает | `POST /api/internal/poll` с токеном | `stored > 0` или `skipped` |
 | Данные появились | `GET /api/alerts?hours=24` | непустой `items` |
 | Сайт видит API | открыть сайт, консоль браузера | нет ошибок CORS/404 |
+| Границы регионов | карта | заливка субъектов + маркеры |
 | Расписание | Actions или cron-job.org | запуски каждые 5 минут |
 
 Типичные ошибки:
 
 | Симптом | Причина |
 |---|---|
-| `database: error` | `DATABASE_URL` без `+asyncpg` или без `?ssl=require` |
+| `FUNCTION_INVOCATION_FAILED` | нет файлов `app/data/*.json` в деплое |
+| `database: error` | `DATABASE_URL` без `+asyncpg`, без `?ssl=require` или неверный пулер |
+| `tenant/user not found` | замените `aws-0` на `aws-1` в хосте пулера |
 | `401 Неверный X-Poll-Token` | токен в планировщике не совпадает с Vercel |
 | `503 ... не задан POLL_TOKEN` | переменная не добавлена в проект API |
 | Сайт пустой, в консоли CORS | `CORS_ORIGINS` не совпадает с адресом фронтенда |
+| Нет заливки регионов | в деплой не попал `data/russia-regions.geojson` (нужен `--all`) |
 | `Session not authorized` | строка сессии повреждена или отозвана |
 | Опрос `stored: 0` | каналы молчат либо `TELEGRAM_CHANNELS` пуст |
 
 ---
 
-## 7. Обновление сайта
-
-```powershell
-cd "C:\Users\Valya\Documents\Проект по умолчанию\drone-radar"
-git add -A
-git commit -m "что изменилось"
-git push
-```
-
-Vercel пересоберёт оба проекта автоматически, GitHub Actions продолжит опрос.
-Если менялись переменные окружения — нужен Redeploy.
-
----
-
-## 8. Ограничения бесплатного Vercel
+## 10. Ограничения бесплатного Vercel
 
 - 300 секунд на функцию, 2 ГБ RAM, 1 vCPU;
 - cron только раз в сутки (поэтому внешний планировщик);
 - логи — 1 час;
-- нет постоянного диска: всё состояние в Neon;
+- нет постоянного диска: всё состояние в Supabase;
 - холодный старт: первый запрос после простоя дольше обычного;
 - Hobby запрещает коммерческое использование;
 - при превышении бесплатных квот Vercel может приостановить проект до конца месяца.

@@ -22,6 +22,9 @@ export default function App() {
   const [lastUpdated, setLastUpdated] = useState(null);
   const [focus, setFocus] = useState(null);
   const [notifyState, setNotifyState] = useState(initialNotifyState);
+  // На Vercel WebSocket отключён: «живость» определяем по успешному опросу API.
+  const pollingOnly = import.meta.env.VITE_DISABLE_WS === "1";
+  const live = connected || (pollingOnly && Boolean(lastUpdated) && !error);
 
   const filtersRef = useRef(filters);
   const notifyRef = useRef(notifyState);
@@ -240,9 +243,9 @@ export default function App() {
         </div>
 
         <div className="topbar__right">
-          <span className={`live-pill ${connected ? "is-live" : "is-offline"}`} aria-live="polite">
+          <span className={`live-pill ${live ? "is-live" : "is-offline"}`} aria-live="polite">
             <span className="live-pill__dot" />
-            {connected ? "LIVE" : "ПЕРЕПОДКЛЮЧЕНИЕ"}
+            {live ? "LIVE" : "ПЕРЕПОДКЛЮЧЕНИЕ"}
           </span>
           <span className="topbar__updated">
             {lastUpdated ? `Обновлено ${formatTime(lastUpdated)}` : "Загрузка…"}

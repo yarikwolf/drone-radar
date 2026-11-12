@@ -6,6 +6,9 @@
 (FastAPI + PostgreSQL), ingestion-воркеры (Telethon, RSS), фоновый notifier (APScheduler)
 и React-интерфейс с картой Leaflet.
 
+Текущий публичный деплой: **<https://drone-radar-one.vercel.app>**
+(API — <https://drone-radar-api.vercel.app>, база — Supabase `eu-west-1`).
+
 > **Важно.** Проект агрегирует только публично доступные сообщения. Он не является официальным
 > средством оповещения, данные могут быть неполными или непроверенными. Не используйте сервис как
 > единственный источник информации в ситуациях, связанных с безопасностью жизни.
@@ -235,7 +238,7 @@ docker compose --profile notify up -d notifier
 ```
 
 Публикация на сервере, домен и HTTPS: см. [`deploy/DEPLOY.md`](deploy/DEPLOY.md).
-Бесплатный вариант на Vercel (frontend + FastAPI + Neon + внешний cron):
+Бесплатный вариант на Vercel (frontend + FastAPI + Supabase + внешний cron):
 см. [`deploy/VERCEL.md`](deploy/VERCEL.md).
 
 ### Локальная разработка
