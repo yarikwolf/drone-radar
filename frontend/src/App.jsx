@@ -22,6 +22,11 @@ export default function App() {
   const [lastUpdated, setLastUpdated] = useState(null);
   const [focus, setFocus] = useState(null);
   const [notifyState, setNotifyState] = useState(initialNotifyState);
+  // Карта занимает весь экран, панели (фильтры и лента) выдвигаются поверх.
+  // Лента по умолчанию свёрнута: при загрузке видна только карта.
+  const [feedOpen, setFeedOpen] = useState(false);
+  // По умолчанию видны только карта и ярлык ленты: фильтры открываются кнопкой.
+  const [filtersOpen, setFiltersOpen] = useState(false);
   // На Vercel WebSocket отключён: «живость» определяем по успешному опросу API.
   const pollingOnly = import.meta.env.VITE_DISABLE_WS === "1";
   const live = connected || (pollingOnly && Boolean(lastUpdated) && !error);
@@ -212,6 +217,10 @@ export default function App() {
       place: place?.name ?? null,
       ts: Date.now()
     });
+    // На узком экране лента закрывает карту — убираем её, чтобы был виден регион.
+    if (typeof window !== "undefined" && window.innerWidth < 900) {
+      setFeedOpen(false);
+    }
   }, []);
 
   // При выборе региона центрируем карту.
@@ -262,7 +271,15 @@ export default function App() {
         </div>
       )}
 
-      <main className="layout">
+      <main
+        className={`layout ${feedOpen ? "is-feed-open" : ""} ${
+          filtersOpen ? "is-filters-open" : ""
+        }`}
+      >
+        <section className="panel map-panel" aria-label="Карта тревог">
+          <RadarMap alerts={latest} focus={focus} onSelect={selectAlert} />
+        </section>
+
         <ControlPanel
           filters={filters}
           onChange={patchFilters}
@@ -273,22 +290,37 @@ export default function App() {
           onEnableNotifications={enableNotifications}
         />
 
-        <section className="panel map-panel" aria-label="Карта тревог">
-          <div className="panel-head">
-            <div>
-              <h2>Оперативная карта</h2>
-              <p>Последний статус по каждому региону</p>
-            </div>
-            <span className="panel-head__count">
-              <b>{latest.length}</b> / {regions.length || "—"}
-            </span>
-          </div>
-          <RadarMap alerts={latest} focus={focus} onSelect={selectAlert} />
-        </section>
+        <button
+          type="button"
+          className="filters-toggle"
+          onClick={() => setFiltersOpen((value) => !value)}
+          aria-expanded={filtersOpen}
+        >
+          {filtersOpen ? "Скрыть фильтры" : "Фильтры и легенда"}
+        </button>
 
         <section className="panel timeline-panel" aria-label="Лента событий">
-          <Timeline alerts={alerts} loading={loading} onSelect={selectAlert} />
+          <Timeline
+            alerts={alerts}
+            loading={loading}
+            onSelect={selectAlert}
+            onClose={() => setFeedOpen(false)}
+          />
         </section>
+
+        <button
+          type="button"
+          className="feed-toggle"
+          onClick={() => setFeedOpen((value) => !value)}
+          aria-expanded={feedOpen}
+          title={feedOpen ? "Свернуть ленту событий" : "Открыть ленту событий"}
+        >
+          <span className="feed-toggle__arrow" aria-hidden="true">
+            {feedOpen ? "›" : "‹"}
+          </span>
+          <span className="feed-toggle__label">Лента</span>
+          <span className="feed-toggle__count">{alerts.length}</span>
+        </button>
       </main>
 
       <footer className="footer">

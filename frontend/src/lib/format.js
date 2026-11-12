@@ -81,3 +81,30 @@ export function latestByRegion(alerts) {
   }
   return Array.from(map.values());
 }
+
+// Признаки работы ПВО: сообщение про сбитие/уничтожение цели.
+const PVO_RE = /(пво|противовоздушн|сбит\w*|уничтож\w*)/i;
+
+/** Короткое действие события вместо полного текста сообщения. */
+export function eventActionLabel(alert) {
+  const text = alert?.message || "";
+  if (PVO_RE.test(text)) return "работа ПВО";
+  if (alert?.status === "all_clear") return "отбой тревоги";
+  switch (alert?.threat_type) {
+    case "drone":
+      return "угроза БПЛА";
+    case "missile":
+      return "ракетная опасность";
+    case "mixed":
+      return "смешанная атака";
+    default:
+      return "воздушная тревога";
+  }
+}
+
+/** Заголовок события: «Новороссийск — работа ПВО». */
+export function eventHeadline(alert) {
+  const place = (alert?.places || []).find((item) => item && item.name);
+  const where = place?.name || alert?.region?.name || "Регион не определён";
+  return `${where} — ${eventActionLabel(alert)}`;
+}

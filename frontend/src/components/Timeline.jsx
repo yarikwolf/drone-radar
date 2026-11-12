@@ -1,6 +1,7 @@
 import {
   STATUS_META,
   THREAT_META,
+  eventHeadline,
   formatDate,
   formatDateTime,
   formatTime,
@@ -31,6 +32,10 @@ function EventItem({ alert, onSelect }) {
   const threat = THREAT_META[alert.threat_type] || THREAT_META.unknown;
   const sources = alert.sources || [];
   const places = (alert.places || []).filter((place) => place && place.name);
+  // Первый населённый пункт уже есть в заголовке — остальные показываем чипами.
+  const headline = eventHeadline(alert);
+  const primaryPlace = places[0]?.name;
+  const extraPlaces = places.filter((place) => place.name !== primaryPlace);
 
   return (
     <article className={`event event--${statusKey}`} style={{ "--event-color": status.color }}>
@@ -50,10 +55,10 @@ function EventItem({ alert, onSelect }) {
             </span>
             <span className="badge">{status.short}</span>
           </span>
-          <span className="event__title">{alert.title}</span>
-          {places.length > 0 && (
+          <span className="event__title">{headline}</span>
+          {extraPlaces.length > 0 && (
             <span className="event__places">
-              {places.map((place) => (
+              {extraPlaces.map((place) => (
                 <span className="event__place" key={place.name}>
                   <i aria-hidden="true">◎</i>
                   {place.name}
@@ -81,7 +86,6 @@ function EventItem({ alert, onSelect }) {
           Детали и источники
           <span>{sources.length}</span>
         </summary>
-        <p className="event__message">{alert.message}</p>
 
         <div className="event__sources">
           {sources.map((source, index) => {
@@ -134,7 +138,7 @@ function Skeleton() {
   );
 }
 
-export default function Timeline({ alerts, loading, onSelect }) {
+export default function Timeline({ alerts, loading, onSelect, onClose }) {
   return (
     <div className="timeline">
       <div className="timeline__head">
@@ -142,7 +146,20 @@ export default function Timeline({ alerts, loading, onSelect }) {
           <h2>Лента событий</h2>
           <p>{alerts.length} записей за выбранный период</p>
         </div>
-        <span className="timeline__auto">автообновление</span>
+        <div className="timeline__tools">
+          <span className="timeline__auto">автообновление</span>
+          {onClose && (
+            <button
+              type="button"
+              className="timeline__close"
+              onClick={onClose}
+              aria-label="Свернуть ленту событий"
+              title="Свернуть ленту"
+            >
+              ×
+            </button>
+          )}
+        </div>
       </div>
 
       <div className="timeline__scroll">

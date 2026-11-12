@@ -37,6 +37,10 @@ export default function ControlPanel({
           Сбросить
         </button>
       </div>
+      <p className="controls__count">
+        Регионов с сигналами:{" "}
+        <b>{counts.active + counts.warning + counts.all_clear}</b> / {regions.length || "—"}
+      </p>
 
       <label className="field">
         <span className="field__label">Регион</span>

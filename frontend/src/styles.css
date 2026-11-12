@@ -208,14 +208,20 @@ p {
   font-variant-numeric: tabular-nums;
 }
 
-/* ---------- Layout ---------- */
+/* ---------- Layout: карта на весь экран, панели поверх ---------- */
 .layout {
+  --feed-width: 388px;
+  --pad-x: 18px;
+  --pad-y: 14px;
+  position: relative;
   flex: 1;
   min-height: 0;
-  display: grid;
-  grid-template-columns: 296px minmax(0, 1fr) 388px;
-  gap: 14px;
-  padding: 14px 18px;
+  padding: var(--pad-y) var(--pad-x);
+}
+
+.layout > .map-panel {
+  position: absolute;
+  inset: var(--pad-y) var(--pad-x);
 }
 
 .panel {
@@ -229,18 +235,46 @@ p {
 }
 
 /* ---------- Controls ---------- */
+/* Панель фильтров — плавающая карточка слева поверх карты. */
 .controls {
+  position: absolute;
+  top: calc(var(--pad-y) + 56px);
+  left: calc(var(--pad-x) + 12px);
+  width: 296px;
+  max-height: calc(100% - var(--pad-y) * 2 - 66px);
   display: flex;
   flex-direction: column;
   gap: 18px;
   padding: 18px;
   overflow-y: auto;
+  z-index: 900;
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0.03), transparent 45%),
+    rgba(10, 17, 27, 0.94);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.45);
+}
+
+/* Фильтры скрыты, пока пользователь не открыл панель. */
+.layout:not(.is-filters-open) .controls {
+  display: none;
 }
 
 .controls__head {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.controls__count {
+  margin-top: -8px;
+  color: var(--muted-2);
+  font-size: 10.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.controls__count b {
+  color: var(--text);
 }
 
 .controls h2,
@@ -505,7 +539,7 @@ p {
 .map-shell {
   position: relative;
   flex: 1;
-  min-height: 440px;
+  min-height: 0;
   background: #070c14;
 }
 
@@ -538,6 +572,14 @@ p {
 .map-overlay--top {
   top: 14px;
   left: 14px;
+  /* В новом макете слева сверху — кнопка фильтров, поэтому счётчик уводим вправо. */
+  left: auto;
+  right: 14px;
+}
+
+/* Лента перекрывает правый верх карты — прячем счётчик, чтобы не торчал из-под панели. */
+.layout.is-feed-open .map-overlay--top {
+  display: none;
 }
 
 .map-overlay__dot {
@@ -834,9 +876,122 @@ p {
   font-size: 10.5px;
 }
 
-/* ---------- Timeline ---------- */
+/* ---------- Timeline: выдвижная панель справа ---------- */
 .timeline-panel {
+  position: absolute;
+  top: var(--pad-y);
+  right: var(--pad-x);
+  bottom: var(--pad-y);
+  width: var(--feed-width);
+  max-width: calc(100% - 2 * var(--pad-x));
   overflow: hidden;
+  z-index: 950;
+  transform: translateX(calc(100% + var(--pad-x) + 8px));
+  transition: transform 0.28s ease;
+  will-change: transform;
+}
+
+.layout.is-feed-open .timeline-panel {
+  transform: none;
+}
+
+/* Ярлык-переключатель ленты на правом краю карты. */
+.feed-toggle {
+  position: absolute;
+  top: 50%;
+  right: var(--pad-x);
+  transform: translateY(-50%);
+  z-index: 960;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 7px;
+  border: 1px solid var(--border);
+  border-right: 0;
+  border-radius: 12px 0 0 12px;
+  background: rgba(11, 18, 29, 0.96);
+  color: var(--muted);
+  font: inherit;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: right 0.28s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.feed-toggle:hover,
+.feed-toggle:focus-visible {
+  color: var(--text);
+}
+
+.layout.is-feed-open .feed-toggle {
+  right: calc(var(--pad-x) + var(--feed-width));
+}
+
+.feed-toggle__arrow {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.feed-toggle__label {
+  writing-mode: vertical-rl;
+}
+
+.feed-toggle__count {
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: rgba(47, 224, 138, 0.14);
+  color: var(--green);
+  font-size: 10px;
+  letter-spacing: 0;
+  writing-mode: horizontal-tb;
+}
+
+/* Кнопка «Фильтры» — плавающая, работает на любой ширине. */
+.filters-toggle {
+  position: absolute;
+  top: calc(var(--pad-y) + 12px);
+  left: calc(var(--pad-x) + 12px);
+  z-index: 940;
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(11, 18, 29, 0.96);
+  color: var(--text);
+  font: inherit;
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.timeline__tools {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timeline__close {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.timeline__close:hover {
+  color: var(--text);
+  border-color: rgba(126, 163, 209, 0.35);
 }
 
 .timeline {
@@ -1375,28 +1530,36 @@ p {
 /* ---------- Responsive ---------- */
 @media (max-width: 1280px) {
   .layout {
-    grid-template-columns: 268px minmax(0, 1fr);
-    grid-template-rows: minmax(0, 1fr) 310px;
+    --feed-width: 348px;
   }
 
-  .timeline-panel {
-    grid-column: 1 / -1;
-  }
-
-  .timeline__scroll {
-    padding-bottom: 10px;
+  .controls {
+    width: 268px;
   }
 }
 
-@media (max-width: 860px) {
-  body {
-    overflow: auto;
+@media (max-width: 900px) {
+  .layout {
+    --feed-width: min(340px, 88%);
+    --pad-x: 12px;
+    --pad-y: 10px;
   }
 
-  .app {
-    height: auto;
-    min-height: 100vh;
-    overflow: visible;
+  .filters-toggle {
+    display: inline-flex;
+  }
+
+  .controls {
+    display: none;
+  }
+
+  .layout.is-filters-open .controls {
+    display: flex;
+    top: calc(var(--pad-y) + 56px);
+    left: var(--pad-x);
+    right: auto;
+    width: min(320px, calc(100% - 2 * var(--pad-x)));
+    max-height: calc(100% - var(--pad-y) * 2 - 66px);
   }
 
   .topbar {
@@ -1409,34 +1572,12 @@ p {
     justify-content: space-between;
   }
 
-  .layout {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 12px;
-  }
-
-  .controls {
-    order: 1;
-    overflow: visible;
-  }
-
-  .map-panel {
-    order: 2;
-  }
-
-  .map-shell {
-    min-height: 56vh;
-  }
-
-  .timeline-panel {
-    order: 3;
-    max-height: 72vh;
-  }
-
   .footer {
-    padding: 4px 14px 14px;
     flex-wrap: wrap;
+  }
+
+  .timeline__scroll {
+    padding-bottom: 10px;
   }
 }
 
@@ -1461,10 +1602,6 @@ p {
 
   .panel-head {
     padding: 12px 14px;
-  }
-
-  .map-shell {
-    min-height: 50vh;
   }
 
   .stats {

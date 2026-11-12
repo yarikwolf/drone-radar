@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import L from "leaflet";
-import { STATUS_META, THREAT_META, formatDateTime } from "../lib/format";
+import { STATUS_META, THREAT_META, eventHeadline, formatDateTime } from "../lib/format";
 
 // Тёмная подложка Esri работает без API-ключа. CARTO с 2025 года отдаёт
 // водяной знак «API KEY REQUIRED» без собственного ключа.
@@ -65,14 +65,14 @@ function safeUrl(value) {
 function popupHtml(alert) {
   const status = STATUS_META[alert.status] || STATUS_META.cleared;
   const threat = THREAT_META[alert.threat_type] || THREAT_META.unknown;
-  const snippet = alert.message?.length > 240 ? `${alert.message.slice(0, 240)}…` : alert.message;
   const sourceUrl = safeUrl(alert.sources?.find((item) => item.url)?.url);
   const sourceLine = sourceUrl
     ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer noopener">Открыть источник</a>`
     : "";
   const places = validPlaces(alert);
-  const placesLine = places.length
-    ? `<p class="radar-popup__places">${places
+  const extraPlaces = places.slice(1);
+  const placesLine = extraPlaces.length
+    ? `<p class="radar-popup__places">${extraPlaces
         .map((place) => `<span>${escapeHtml(place.name)}</span>`)
         .join("")}</p>`
     : "";
@@ -82,12 +82,11 @@ function popupHtml(alert) {
       <div class="radar-popup__status">
         <span class="radar-popup__dot"></span>${escapeHtml(status.label)}
       </div>
-      <h3>${escapeHtml(alert.region?.name || "Регион не определён")}</h3>
+      <h3>${escapeHtml(eventHeadline(alert))}</h3>
       ${placesLine}
       <p class="radar-popup__meta">${escapeHtml(threat.label)} · ${escapeHtml(
         formatDateTime(alert.event_at)
       )} · местное время</p>
-      <p class="radar-popup__text">${escapeHtml(snippet)}</p>
       <div class="radar-popup__footer">
         <span>Источников: ${Number(alert.merged_count || 1)}</span>
         ${sourceLine}
