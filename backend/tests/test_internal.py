@@ -52,3 +52,20 @@ async def test_poll_handles_failure(monkeypatch: pytest.MonkeyPatch) -> None:
     with pytest.raises(HTTPException) as exc:
         await internal.trigger_poll("secret")
     assert exc.value.status_code == 502
+
+
+async def test_setup_cron_requires_token(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Установка задания pg_cron закрыта тем же токеном, что и опрос."""
+    monkeypatch.setattr(settings, "poll_token", "")
+    with pytest.raises(HTTPException) as exc:
+        await internal.setup_cron(None, "any")  # type: ignore[arg-type]
+    assert exc.value.status_code == 503
+
+    monkeypatch.setattr(settings, "poll_token", "secret")
+    with pytest.raises(HTTPException) as exc:
+        await internal.setup_cron(None, None)  # type: ignore[arg-type]
+    assert exc.value.status_code == 401
+
+    with pytest.raises(HTTPException) as exc:
+        await internal.setup_cron(None, "wrong")  # type: ignore[arg-type]
+    assert exc.value.status_code == 401

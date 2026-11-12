@@ -9,7 +9,7 @@ GitHub (код) ──► Vercel: frontend  ──►  https://drone-radar-one.v
                  Vercel: backend (FastAPI)  ──►  Supabase PostgreSQL
                         ▲                        (eu-west-1, pooler)
                         │ POST /api/internal/poll (X-Poll-Token)
-                 GitHub Actions, каждые 5 минут
+                 Supabase Cron (pg_cron + pg_net), каждые 5 минут
 ```
 
 Текущий рабочий деплой:
@@ -23,7 +23,8 @@ GitHub (код) ──► Vercel: frontend  ──►  https://drone-radar-one.v
 Что важно знать заранее:
 
 - **cron на Hobby работает только раз в сутки**, поэтому опрос Telegram
-  запускает GitHub Actions (бесплатно для публичного репозитория);
+  запускает **Supabase Cron** (`pg_cron` + `pg_net`); GitHub Actions оставлен
+  как резервный вариант;
 - **базы данных в Vercel нет**, нужен внешний PostgreSQL — используем **Supabase**
   (Neon недоступен из РФ: отдаёт `403 Access Blocked in Your Region`);
 - **WebSocket** на Vercel нам не нужен: фронтенд опрашивает API каждые 15 секунд
@@ -226,7 +227,33 @@ python deploy/vercel_deploy.py env drone-radar web.env.json
 
 ## 7. Планировщик: опрос каждые 5 минут
 
-### Вариант A: GitHub Actions (уже в репозитории)
+### Вариант A: Supabase Cron (основной, уже настроен)
+
+Supabase умеет запускать задачи по расписанию внутри базы: `pg_cron` вызывает
+`pg_net`, а тот делает `POST /api/internal/poll`. Работает круглосуточно и без
+задержек, которые бывают у GitHub Actions.
+
+Установка (идемпотентно, можно повторять):
+
+```powershell
+curl -X POST "https://drone-radar-api.vercel.app/api/internal/setup-cron" `
+  -H "X-Poll-Token: ВАШ_ТОКЕН"
+# {"ok":true,"poll_url":"...","schedule":"*/5 * * * *",
+#  "jobs":[["drone-radar-poll","*/5 * * * *",true]]}
+```
+
+Что делает endpoint: включает расширения `pg_cron`/`pg_net`, пересоздаёт задание
+`drone-radar-poll` с расписанием `*/5 * * * *` и таймаутом 280 секунд. Токен
+хранится в определении задания — он тот же, что в переменных Vercel.
+
+Проверить состояние задания можно в SQL Editor:
+
+```sql
+select jobname, schedule, active from cron.job;
+select id, status_code, content from net._http_response order by id desc limit 5;
+```
+
+### Вариант B: GitHub Actions (резервный, уже в репозитории)
 
 Файл `.github/workflows/poll.yml` запускается по расписанию.
 
@@ -237,11 +264,10 @@ python deploy/vercel_deploy.py env drone-radar web.env.json
    - `POLL_TOKEN` = тот же токен, что в Vercel.
 4. **Actions → Poll sources → Run workflow** — проверить вручную.
 
-Ограничения GitHub: расписание может задерживаться на 5–15 минут, а после
-60 дней без активности репозитория GitHub отключает cron (достаточно зайти и
-включить снова или сделать любой коммит).
+Ограничения GitHub: расписание может задерживаться на десятки минут, а после
+60 дней без активности репозитория GitHub отключает cron.
 
-### Вариант B: cron-job.org
+### Вариант C: cron-job.org
 
 1. <https://cron-job.org> → регистрация → **Create cronjob**.
 2. URL: `https://drone-radar-api.vercel.app/api/internal/poll`
@@ -249,8 +275,8 @@ python deploy/vercel_deploy.py env drone-radar web.env.json
 4. Advanced → Request method: **POST**; Headers:
    `X-Poll-Token: ВАШ_ТОКЕН`.
 
-Достаточно одного планировщика: если работают оба, второй запуск просто
-пропускается благодаря блокировке (`"skipped": true`).
+Планировщики можно держать включёнными одновременно: если опрос уже идёт,
+остальные запуски пропускаются благодаря блокировке (`"skipped": true`).
 
 ---
 
@@ -291,7 +317,7 @@ python deploy/vercel_deploy.py deploy drone-radar frontend/dist --all
 | Данные появились | `GET /api/alerts?hours=24` | непустой `items` |
 | Сайт видит API | открыть сайт, консоль браузера | нет ошибок CORS/404 |
 | Границы регионов | карта | заливка субъектов + маркеры |
-| Расписание | Actions или cron-job.org | запуски каждые 5 минут |
+| Расписание | Supabase Cron (`cron.job`), Actions или cron-job.org | запуски каждые 5 минут |
 
 Типичные ошибки:
 
